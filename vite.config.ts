@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/Min-Thant794/',
   server: {
-    port: 8080
+    port: 8080,
+    open: true
   }
 })

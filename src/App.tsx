@@ -1,6 +1,14 @@
+import NavBar from "./components/Navbar"
+import Hero from "./sections/Hero"
+import Footer from "./components/Footer"
+
 const App = () => {
   return (
-    <div>Hello There!</div>
+    <>
+      <NavBar/>
+      <Hero/>
+      <Footer/>
+    </>
   )
 }
 
