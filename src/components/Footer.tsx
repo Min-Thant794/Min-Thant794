@@ -7,7 +7,7 @@ const Footer = () => {
         </div>
 
         <p className="font-headline text-sm uppercase tracking-widest text-[#aaabb0]">
-          © 2024 Min Thant Tun. Built with Kinetic Precision.
+          © 2026 Min Thant Tun | All Rights Reserved
         </p>
 
         <div className="flex gap-8">

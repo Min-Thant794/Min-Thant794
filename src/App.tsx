@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import SkillsSection from "./components/SkillsSection";
-import ProjectsSection from "./components/ProjectsSection";
-import ExperienceSection from "./components/ExperienceSection";
-import EducationSection from "./components/EducationSection";
-import ContactSection from "./components/ContactSection";
+import HeroSection from "./sections/HeroSection";
+import AboutSection from "./sections/AboutSection";
+import SkillsSection from "./sections/SkillsSection";
+import ProjectsSection from "./sections/ProjectsSection";
+import ExperienceSection from "./sections/ExperienceSection";
+import EducationSection from "./sections/EducationSection";
+import ContactSection from "./sections/ContactSection";
 import Footer from "./components/Footer";
 
 const App = () => {

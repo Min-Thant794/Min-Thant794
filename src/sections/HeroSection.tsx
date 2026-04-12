@@ -2,7 +2,7 @@ import profileImage from "../assets/images/presenterAtPSBAcademy.png"
 
 const HeroSection = () => {
   return (
-    <section className="scroll-mt-24 relative mx-auto flex min-h-[921px] max-w-7xl items-center overflow-hidden px-8 py-20">
+    <section className="scroll-mt-24 relative mx-auto flex min-h-[921px] items-center overflow-hidden px-30 py-20">
       <div className="z-10 grid items-center gap-12 lg:grid-cols-2">
         <div className="space-y-8">
           <div className="inline-block rounded-full border border-outline-variant/20 bg-surface-container-high px-4 py-1.5 text-sm uppercase tracking-widest text-primary">
