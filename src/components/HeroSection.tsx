@@ -1,3 +1,5 @@
+import profileImage from "../assets/images/presenterAtPSBAcademy.png"
+
 const HeroSection = () => {
   return (
     <section className="scroll-mt-24 relative mx-auto flex min-h-[921px] max-w-7xl items-center overflow-hidden px-8 py-20">
@@ -39,8 +41,8 @@ const HeroSection = () => {
             </div>
 
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSAdtvbZStWXZRoDXRtLbE01HuXaE9uyVrdLr73TRDI-LoVh7zijdBy61tVYjtuR1Zve2DfoeYgxg0h8s3D3Mkxc7mgqyOcNyAdjvJG6IezGZpWHrZV3ihUYKfWGsWFd9L7msPD_Ik8pKfp4lb2rWZ6o8QR320kLtIagX582drSwhZ8jhpa8dgqT6VMJLlcI-rUMtqy2x2zVLDMmphhBt6c2jaFhhoMdJz5xUioLWTawMTQoAlV82hCCCVnG21sCbdBZ9_8TkT3Ys"
-              alt="Modern Development Environment"
+              src={profileImage}
+              alt="Profile Picture"
               className="rounded-xl opacity-60 grayscale transition-all duration-700 group-hover:opacity-100 group-hover:grayscale-0"
             />
           </div>
