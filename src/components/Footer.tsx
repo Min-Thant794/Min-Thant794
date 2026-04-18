@@ -11,14 +11,14 @@ const Footer = () => {
         </p>
 
         <div className="flex gap-8">
-          <a href="#" className="font-headline text-sm uppercase tracking-widest text-on-surface-variant opacity-80 transition-all hover:text-tertiary hover:opacity-100">
+          <a href="https://github.com/Min-Thant794" className="font-headline text-sm uppercase tracking-widest text-on-surface-variant opacity-80 transition-all hover:text-tertiary hover:opacity-100">
             GitHub
           </a>
           <a href="#" className="font-headline text-sm uppercase tracking-widest text-on-surface-variant opacity-80 transition-all hover:text-tertiary hover:opacity-100">
             LinkedIn
           </a>
           <a href="#" className="font-headline text-sm uppercase tracking-widest text-on-surface-variant opacity-80 transition-all hover:text-tertiary hover:opacity-100">
-            Twitter
+            WhatsApp
           </a>
           <a href="#" className="font-headline text-sm uppercase tracking-widest text-on-surface-variant opacity-80 transition-all hover:text-tertiary hover:opacity-100">
             Email

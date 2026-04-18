@@ -26,7 +26,7 @@ const ProjectsSection = () => {
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuASV2ru4bn3xOrSBl_bku01ZlUFCeBgZtGGIkTU80aeql7KTIcGLNI3GyRTmM23kumQX3sAZugYcsYQGZzsbKXed0TiQu9wPbzdEegDEzQCiGZfqAd8IBUMDHNsJF2-LCqiy47CxPjjiZ040Tl5RcmttoJ2ktVpMPiQBmnkzAFPx6LCq1ZNlKU6MylfrelHuX-n4P7cFH9JhsIBWZbNnpqMcftUCz51aGkU1zHCVb1-vYStSJb9uyXIPlhM-BPB7s0Iew3S7OGLgMw"
               alt="IRBS System Dashboard"
-              className="h-[500px] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="h-125 w-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
             <div className="absolute bottom-0 left-0 z-20 w-full p-12">
@@ -61,7 +61,7 @@ const ProjectsSection = () => {
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfZTaDwzGi1ylGag3iB8hMg8k_nfRJ_M3fqN-F26AvonCMQWnjdpapMNVBBiHOfRviTxG46hL30Hk3YE5rEkDvjGFxxpdCxRGGP546aOu9jhkKC9CCmzg-c8EUAwonCkGA8raTCAGRiBE-lw3bYxZSKejZMx2-f-WtEYQIrfK6a7HinaVjf7vkn6yj4HxrdmA4pT9s26O-YJ2a-U4QMPchto_9JSvLLCRp9o8FHetqRhKUmlPN7sJXHhJ1avXdZYBVSmIBstqQsOY"
               alt="Shopping PWA"
-              className="h-[500px] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="h-125 w-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
             <div className="absolute bottom-0 left-0 z-20 p-8">

@@ -46,7 +46,7 @@ const SkillsSection = () => {
             </div>
             <h3 className="mb-4 font-headline text-xl font-bold">Programming</h3>
             <div className="flex flex-wrap gap-2">
-              {["JS/ES6+", "Python", "Java SE"].map((item) => (
+              {["JS/ES6+", "Python", "TypeScript","Java SE"].map((item) => (
                 <span key={item} className="rounded-full bg-surface-container-highest px-3 py-1 text-xs uppercase tracking-wider text-on-surface-variant">
                   {item}
                 </span>
@@ -60,7 +60,7 @@ const SkillsSection = () => {
             </div>
             <h3 className="mb-4 font-headline text-xl font-bold">Tools</h3>
             <div className="flex flex-wrap gap-2">
-              {["Git", "Figma", "VS Code", "Unity"].map((item) => (
+              {["Git", "Figma", "VS Code"].map((item) => (
                 <span key={item} className="rounded-full bg-surface-container-highest px-3 py-1 text-xs uppercase tracking-wider text-on-surface-variant">
                   {item}
                 </span>
