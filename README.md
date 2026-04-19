@@ -36,3 +36,4 @@ Computer Science graduate with a focus on full-stack development using React.js 
 - Portfolio: https://min-thant794.github.io/Min-Thant794/
 - LinkedIn: https://www.linkedin.com/in/min-thant-tun-b73a4337a/
 - Email: minthanthtun29@gmail.com
+- WhatsApp: https://wa.me/6585025446?text=Hello%20Min%20Thant%20Tun!
