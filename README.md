@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+Hi, I'm Min Thant Tun 👋  
+Computer Science graduate with a focus on full-stack development using React.js and Node.js.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 🔭 Currently working on: Integrated Rental Booking System (MERN)
+- 🌱 Learning: Java, backend architecture, and system design
+- 🎯 Goal: Become a full-stack developer
 
-Currently, two official plugins are available:
+## Tech Stack
+- Frontend: React, JavaScript, HTML, CSS, Tailwind CSS
+- Backend: Node.js, Express.js
+- Database: MongoDB
+- Tools: Git, GitHub, Postman, Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Projects
 
-## React Compiler
+### 🚗 Integrated Rental Booking System (MERN)
+- Full-stack web application with authentication and role-based access control  
+- Features: booking system, admin dashboard, CRUD operations  
+- Tech: React, Node.js, Express, MongoDB  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 Code: https://github.com/Min-Thant794/my-project.git  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🛒 Shopping Progressive Web App (Full Stack)
+- Developed a full-stack e-commerce PWA with mentor guidance  
+- Implemented JWT authentication and real-time features using Socket.io  
+- Features: product management, user accounts, order processing  
+- Tech: React, Node.js, Express, MongoDB, Socket.io  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🔗 Code: https://github.com/Min-Thant794/shoppingWebsite.git
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Connect with me
+- Portfolio: https://min-thant794.github.io/Min-Thant794/
+- LinkedIn: https://www.linkedin.com/in/min-thant-tun-b73a4337a/
+- Email: minthanthtun29@gmail.com
