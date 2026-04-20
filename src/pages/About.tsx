@@ -1,9 +1,9 @@
-import HeroSection from "../sections/about/HeroSection"
-import AcademicSection from "../sections/about/AcademicSection"
-import PhilosophySection from "../sections/about/PhilosophySection"
-import GrowthSection from "../sections/about/GrowthSection"
-import VisionQuote from "../sections/about/VisionQuote"
-import CTASection from "../sections/about/CTASection"
+import HeroSection from "../features/about/sections/HeroSection"
+import AcademicSection from "../features/about/sections/AcademicSection"
+import PhilosophySection from "../features/about/sections/PhilosophySection"
+import GrowthSection from "../features/about/sections/GrowthSection"
+import VisionQuote from "../features/about/sections/VisionQuote"
+import CTASection from "../features/about/sections/CTASection"
 
 const About = () => {
   return (

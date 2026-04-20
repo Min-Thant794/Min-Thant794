@@ -1,10 +1,10 @@
-import HeroSection from "../sections/home/HeroSection";
-import AboutSection from "../sections/home/AboutSection";
-import SkillsSection from "../sections/home/SkillsSection";
-import ProjectsSection from "../sections/home/ProjectsSection";
-import ExperienceSection from "../sections/home/ExperienceSection";
-import EducationSection from "../sections/home/EducationSection";
-import ContactSection from "../sections/home/ContactSection"
+import HeroSection from "../features/home/sections/HeroSection";
+import AboutSection from "../features/home/sections/AboutSection";
+import SkillsSection from "../features/home/sections/SkillsSection";
+import ProjectsSection from "../features/home/sections/ProjectsSection";
+import ExperienceSection from "../features/home/sections/ExperienceSection";
+import EducationSection from "../features/home/sections/EducationSection";
+import ContactSection from "../features/home/sections/ContactSection"
 
 const Home = () => {
   return (

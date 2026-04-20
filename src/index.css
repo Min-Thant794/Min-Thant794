@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  font-family: Inter, sans-serif;
+@theme {
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: Inter, sans-serif;
   --color-primary: #a0ffc3;
-  --color-tertiary: #7ae6ff;
   --color-secondary: #74fbbb;
+  --color-tertiary: #7ae6ff;
 
   --color-background: #0c0e12;
   --color-surface: #0c0e12;
@@ -24,17 +25,18 @@
   --color-on-tertiary: #005360;
 }
 
+:root {
+  font-family: Inter, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: #0c0e12;
   color: #f6f6fc;
-}
-
-.font-headline {
-  font-family: "Space Grotesk", sans-serif;
 }
 
 .text-glow {

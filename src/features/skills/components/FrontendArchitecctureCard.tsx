@@ -1,5 +1,5 @@
-import SkillProgressBar from "../../components/skills/SkillProgressBar";
-import TechBadge from "../../components/skills/TechBadge";
+import SkillProgressBar from "../../../components/ui/SkillProgressBar";
+import TechBadge from "../../../components/ui/TechBadge";
 
 const FrontendArchitecctureCard = () => {
   return (

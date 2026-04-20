@@ -1,6 +1,6 @@
-import HeroHeader from "../sections/skills/HeroHeader"
-import SkillsGrid from "../sections/skills/SkillsGrid"
-import SkillsActionSection from "../sections/skills/SkillsActionSection"
+import HeroHeader from "../features/skills/sections/HeroHeader"
+import SkillsGrid from "../features/skills/sections/SkillsGrid"
+import SkillsActionSection from "../features/skills/sections/SkillsActionSection"
 
 const Skills = () => {
   return (

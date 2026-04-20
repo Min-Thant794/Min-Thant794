@@ -1,4 +1,4 @@
-import profileImage from "../../assets/images/presenterAtPSBAcademy.png"
+import profileImage from "../../../assets/images/presenterAtPSBAcademy.png"
 
 const HeroSection = () => {
     return (

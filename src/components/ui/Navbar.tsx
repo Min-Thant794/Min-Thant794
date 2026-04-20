@@ -23,7 +23,7 @@ const NavBar = () => {
       name: "Education"
     },
     {
-      path: "Contact",
+      path: "/contact",
       name: "Contact"
     }
   ]
