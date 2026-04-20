@@ -1,10 +1,7 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-}
-
-@theme {
+:root {
+  font-family: Inter, sans-serif;
   --color-primary: #a0ffc3;
   --color-tertiary: #7ae6ff;
   --color-secondary: #74fbbb;
@@ -27,10 +24,6 @@ html {
   --color-on-tertiary: #005360;
 }
 
-:root {
-  font-family: Inter, sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -50,4 +43,19 @@ body {
 
 .ghost-border {
   border: 1px solid rgba(70, 72, 77, 0.15);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-effect {
+  background: rgba(35, 38, 44, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.technical-grid {
+  background-image: radial-gradient(circle at 2px 2px, rgba(160, 255, 195, 0.03) 1px, transparent 0);
+  background-size: 32px 32px;
 }

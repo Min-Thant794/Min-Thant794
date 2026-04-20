@@ -1,8 +1,12 @@
-import profileImage from "../assets/images/presenterAtPSBAcademy.png"
+import { useNavigate } from "react-router-dom";
+import profileImage from "../../assets/images/presenterAtPSBAcademy.png"
 
 const HeroSection = () => {
+
+  const navigate = useNavigate();
+
   return (
-    <section className="scroll-mt-24 relative mx-auto flex min-h-[921px] items-center overflow-hidden px-30 py-20">
+    <section className="scroll-mt-15 relative mx-auto flex min-h-230 items-center overflow-hidden px-30 py-10">
       <div className="z-10 grid items-center gap-12 lg:grid-cols-2">
         <div className="space-y-8">
           <div className="inline-block rounded-full border border-outline-variant/20 bg-surface-container-high px-4 py-1.5 text-sm uppercase tracking-widest text-primary">
@@ -20,10 +24,12 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="rounded-xl bg-linear-to-br from-primary to-tertiary px-8 py-4 text-lg font-bold text-on-primary-fixed transition-all hover:shadow-[0_0_30px_rgba(160,255,195,0.2)]">
+            <button
+            onClick={() => navigate("/projects")}
+            className="rounded-xl bg-linear-to-br from-primary cursor-pointer active:opacity-70 to-tertiary px-8 py-4 text-lg font-bold text-on-primary-fixed transition-all hover:shadow-[0_0_30px_rgba(160,255,195,0.2)]">
               View Projects
             </button>
-            <button className="rounded-xl border border-outline-variant/30 bg-surface-container-high px-8 py-4 text-lg font-bold text-on-surface transition-all hover:bg-surface-container">
+            <button className="rounded-xl border cursor-pointer active:opacity-70 border-outline-variant/30 bg-surface-container-high px-8 py-4 text-lg font-bold text-on-surface transition-all hover:bg-surface-container">
               Contact Me
             </button>
           </div>

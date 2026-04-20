@@ -1,14 +1,14 @@
-import HeroSection from "../sections/HeroSection";
-import AboutSection from "../sections/AboutSection";
-import SkillsSection from "../sections/SkillsSection";
-import ProjectsSection from "../sections/ProjectsSection";
-import ExperienceSection from "../sections/ExperienceSection";
-import EducationSection from "../sections/EducationSection";
-import ContactSection from "../sections/ContactSection"
+import HeroSection from "../sections/home/HeroSection";
+import AboutSection from "../sections/home/AboutSection";
+import SkillsSection from "../sections/home/SkillsSection";
+import ProjectsSection from "../sections/home/ProjectsSection";
+import ExperienceSection from "../sections/home/ExperienceSection";
+import EducationSection from "../sections/home/EducationSection";
+import ContactSection from "../sections/home/ContactSection"
 
 const Home = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-10">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
