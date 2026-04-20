@@ -18,8 +18,12 @@ const NavBar = () => {
       path: "/projects",
       name: "Projects"
     },
+    // {
+    //   path: "/experience",
+    //   name: "Experience"
+    // },
     {
-      path: "/education",
+      path: "/experience",
       name: "Education"
     },
     {
