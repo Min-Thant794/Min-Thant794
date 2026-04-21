@@ -1,6 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/ui/Navbar";
-import Footer from "./components/ui/Footer";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
@@ -11,25 +10,37 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 
+import PageTransition from "./components/ui/PageTransition";
+import MainLayout from "./layouts/MainLayout";
+
+const AnimatedRoutes = () => {
+
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route element={<MainLayout/>}>
+          <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+          <Route path="/about" element={<PageTransition><About /></PageTransition>} />
+          <Route path="/skills" element={<PageTransition><Skills /></PageTransition>} />
+          <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
+          <Route path="/experience" element={<PageTransition><Experience /></PageTransition>} />
+          <Route path="/education" element={<PageTransition><Education /></PageTransition>} />
+          <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+          <Route path="/resume" element={<PageTransition><Resume/></PageTransition>}/>
+          <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+        </Route>
+      </Routes>
+    </AnimatePresence>
+  )
+}
+
 const App = () => {
   return (
-    <div className="bg-background text-on-background selection:bg-primary selection:text-on-primary">
       <BrowserRouter basename="/Min-Thant794/">
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume/>}/>
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer/>
+          <AnimatedRoutes/>
       </BrowserRouter>
-    </div>
   )
 }
 

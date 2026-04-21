@@ -12,8 +12,8 @@ const AboutSection = () => {
 
           <div className="space-y-6 lg:col-span-3">
             <p className="text-xl leading-relaxed text-on-surface-variant">
-              Currently pursuing a <span className="font-medium text-primary">BSc (Hons) in Computing</span> at
-              Coventry University, I&apos;ve spent the last few years immersing myself in the
+              Having completed a <span className="font-medium text-primary">BSc (Hons) in Computing</span> from
+              Coventry University, I&apos;ve spent the past few years immersing myself in the
               architecture of modern digital systems.
             </p>
 
@@ -24,8 +24,8 @@ const AboutSection = () => {
             </p>
 
             <p className="text-xl leading-relaxed text-on-surface-variant">
-              Beyond web tech, I am currently diving deep into <span className="font-medium text-tertiary">Java SE</span> to broaden my
-              understanding of object-oriented programming and enterprise-level reliability.
+              Beyond web tech, I've been deepening my understanding of <span className="font-medium text-tertiary">Java SE</span> to strengthen my
+              foundation in object-oriented programming and enterprise-level systems.
             </p>
           </div>
         </div>
