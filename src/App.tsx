@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>
