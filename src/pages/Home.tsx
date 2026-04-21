@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import HeroSection from "../features/home/sections/HeroSection";
 import AboutSection from "../features/home/sections/AboutSection";
 import SkillsSection from "../features/home/sections/SkillsSection";
@@ -7,9 +8,12 @@ import EducationSection from "../features/home/sections/EducationSection";
 import ContactSection from "../features/home/sections/ContactSection"
 
 const Home = () => {
+
+  const contactRef = useRef<HTMLDivElement | null> (null);
+
   return (
     <div className="pt-10">
-        <HeroSection />
+        <HeroSection contactRef = {contactRef}/>
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
@@ -23,7 +27,7 @@ const Home = () => {
             </div>
         </section>
 
-        <ContactSection />
+        <ContactSection ref={contactRef} />
     </div>
   )
 }

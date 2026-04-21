@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 const ProjectsSection = () => {
+
+  const navigate = useNavigate();
+
   return (
     <section id="projects" className="scroll-mt-24 bg-surface-container-low py-32">
       <div className="mx-auto max-w-7xl px-8">
@@ -12,7 +17,9 @@ const ProjectsSection = () => {
             </p>
           </div>
 
-          <a href="#" className="group flex items-center gap-2 font-bold text-primary">
+          <a 
+          onClick={() => navigate("/projects")}
+          href="#" className="group flex items-center gap-2 font-bold text-primary">
             View All Projects
             <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
               arrow_forward

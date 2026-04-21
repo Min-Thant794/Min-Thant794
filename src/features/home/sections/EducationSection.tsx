@@ -7,33 +7,43 @@ const EducationSection = () => {
       </h2>
 
       <div className="space-y-8">
-        <div className="ghost-border rounded-2xl bg-surface-container p-6">
-          <div className="mb-2 flex items-start justify-between">
-            <h3 className="text-lg font-bold text-on-surface">BSc (Hons) in Computing</h3>
-            <span className="text-sm text-tertiary">2021 — PRESENT</span>
+        <div className="ghost-border rounded-2xl bg-surface-container p-6 grid grid-cols-6">
+          <div className="col-span-5">
+            <div className="mb-2 flex items-start justify-between">
+              <h3 className="text-lg font-bold text-on-surface">BSc (Hons) in Computing</h3>
+            </div>
+            <p className="text-on-surface-variant">Coventry University</p>
           </div>
-          <p className="mb-4 text-on-surface-variant">Coventry University</p>
-          <div className="flex flex-wrap gap-2">
-            <span className="rounded bg-surface-container-highest px-2 py-1 text-[10px] uppercase tracking-widest text-on-surface-variant">
-              Current Grade: First Class
-            </span>
-          </div>
+          <div className="flex flex-col justify-between">
+              <div className="text-sm text-tertiary">COMPLETED</div>
+              <div className="text-sm tracking-wide">2024-2026</div>
+            </div>
         </div>
 
-        <div className="ghost-border rounded-2xl bg-surface-container p-6">
-          <div className="mb-2 flex items-start justify-between">
-            <h3 className="text-lg font-bold text-on-surface">L4 Diploma in Computing</h3>
-            <span className="text-sm text-tertiary">COMPLETED</span>
+        <div className="ghost-border rounded-2xl bg-surface-container p-6 grid grid-cols-6">
+          <div className="col-span-5">
+            <div className="mb-2 flex items-start justify-between">
+              <h3 className="text-lg font-bold text-on-surface">L4 Diploma in Computing</h3>
+            </div>
+            <p className="text-on-surface-variant">NCC Education</p>
           </div>
-          <p className="text-on-surface-variant">NCC Education</p>
+          <div className="flex flex-col justify-between">
+              <div className="text-sm text-tertiary">COMPLETED</div>
+              <div className="text-sm tracking-wide">2023-2024</div>
+            </div>
         </div>
 
-        <div className="ghost-border rounded-2xl bg-surface-container p-6">
-          <div className="mb-2 flex items-start justify-between">
-            <h3 className="text-lg font-bold text-on-surface">Japanese Language Proficiency</h3>
-            <span className="text-sm text-tertiary">CERTIFIED</span>
+        <div className="ghost-border rounded-2xl bg-surface-container p-6 grid grid-cols-6">
+          <div className="col-span-5">
+            <div className="mb-2 flex items-start justify-between">
+              <h3 className="text-lg font-bold text-on-surface">Japanese Language Proficiency</h3>
+            </div>
+            <p className="text-on-surface-variant">JLPT N4 Certificate</p>
           </div>
-          <p className="text-on-surface-variant">JLPT N4 Certificate</p>
+          <div className="flex flex-col justify-between">
+              <div className="text-sm text-tertiary">CERTIFIED</div>
+              <div className="text-sm tracking-wide">2022</div>
+            </div>
         </div>
       </div>
     </div>

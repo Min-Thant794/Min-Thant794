@@ -3,7 +3,7 @@ const ExperienceSection = () => {
     <div id="experience" className="scroll-mt-24">
       <h2 className="mb-12 flex items-center gap-4 font-headline text-4xl font-bold">
         <span className="material-symbols-outlined text-primary">work</span>
-        Experience
+        Experience & Involvement
       </h2>
 
       <div className="space-y-12">
@@ -11,11 +11,10 @@ const ExperienceSection = () => {
           <div className="absolute -left-1.25 top-1.5 h-3 w-3 rounded-full bg-primary shadow-[0_0_10px_rgba(160,255,195,0.5)]" />
           <h3 className="text-xl font-bold text-on-surface">Volunteer Facilitator</h3>
           <p className="mb-2 text-sm uppercase tracking-wider text-primary">
-            NVL University Graduation
+            NVL University Graduation Ceremony
           </p>
           <p className="text-on-surface-variant">
-            Coordinated logistics and attendee registration for major university events,
-            ensuring seamless flow and professional environment.
+            Assisted with event coordination, attendee guidance, and on-site logistics during the university graduation ceremony, contributing to an organized and smooth event experience.
           </p>
         </div>
 
@@ -23,11 +22,10 @@ const ExperienceSection = () => {
           <div className="absolute -left-1.25 top-1.5 h-3 w-3 rounded-full bg-outline-variant" />
           <h3 className="text-xl font-bold text-on-surface">Environmental Volunteer</h3>
           <p className="mb-2 text-sm uppercase tracking-wider text-primary">
-            Eco-Initiative
+            Keep Our Environment Clean Activity
           </p>
           <p className="text-on-surface-variant">
-            Led local cleanup drives and awareness campaigns about sustainable digital
-            waste management.
+            Contributed to community environmental initiatives through cleanup participation and awareness efforts, strengthening teamwork, responsibility, and community engagement skills.
           </p>
         </div>
       </div>

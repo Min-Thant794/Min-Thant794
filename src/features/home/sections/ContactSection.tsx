@@ -1,13 +1,16 @@
 import React from "react";
 
-const ContactSection = () => {
-
+const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
   const handleSubmit: React.ComponentProps<"form">["onSubmit"] = (e) => {
     e.preventDefault();
-  }
+  };
 
   return (
-    <section id="contact" className="scroll-mt-24 relative overflow-hidden bg-surface-container-low py-32">
+    <section
+      ref={ref}
+      id="contact"
+      className="scroll-mt-24 relative overflow-hidden bg-surface-container-low py-32"
+    >
       <div className="absolute right-0 top-0 h-full w-1/3 bg-primary/5 blur-[120px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-8">
@@ -44,9 +47,10 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <form 
-          onSubmit={handleSubmit}
-          className="ghost-border space-y-6 rounded-3xl bg-surface-container p-10">
+          <form
+            onSubmit={handleSubmit}
+            className="ghost-border space-y-6 rounded-3xl bg-surface-container p-10"
+          >
             <div className="grid gap-6 md:grid-cols-2">
               <div className="space-y-2">
                 <label className="ml-1 text-sm uppercase tracking-widest text-on-surface-variant">
@@ -55,7 +59,7 @@ const ContactSection = () => {
                 <input
                   type="text"
                   placeholder="John Doe"
-                  className="w-full px-3 border-0 border-b outline-none border-outline-variant bg-surface-container-low py-4 text-on-surface placeholder:text-outline transition-all focus:border-primary focus:ring-0"
+                  className="w-full border-0 border-b border-outline-variant bg-surface-container-low px-3 py-4 text-on-surface outline-none placeholder:text-outline transition-all focus:border-primary focus:ring-0"
                 />
               </div>
 
@@ -66,7 +70,7 @@ const ContactSection = () => {
                 <input
                   type="email"
                   placeholder="john@example.com"
-                  className="w-full px-3 border-0 border-b outline-none border-outline-variant bg-surface-container-low py-4 text-on-surface placeholder:text-outline transition-all focus:border-primary focus:ring-0"
+                  className="w-full border-0 border-b border-outline-variant bg-surface-container-low px-3 py-4 text-on-surface outline-none placeholder:text-outline transition-all focus:border-primary focus:ring-0"
                 />
               </div>
             </div>
@@ -78,13 +82,13 @@ const ContactSection = () => {
               <textarea
                 rows={4}
                 placeholder="How can I help you?"
-                className="w-full px-3 resize-none border-0 border-b outline-none border-outline-variant bg-surface-container-low py-4 text-on-surface placeholder:text-outline transition-all focus:border-primary focus:ring-0"
+                className="w-full resize-none border-0 border-b border-outline-variant bg-surface-container-low px-3 py-4 text-on-surface outline-none placeholder:text-outline transition-all focus:border-primary focus:ring-0"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full cursor-pointer active:opacity-75 rounded-xl bg-linear-to-r from-primary to-tertiary py-4 font-bold text-on-primary-fixed transition-all hover:shadow-[0_10px_30px_rgba(160,255,195,0.2)]"
+              className="w-full cursor-pointer rounded-xl bg-linear-to-r from-primary to-tertiary py-4 font-bold text-on-primary-fixed transition-all hover:shadow-[0_10px_30px_rgba(160,255,195,0.2)] active:opacity-75"
             >
               Send Message
             </button>
@@ -93,6 +97,6 @@ const ContactSection = () => {
       </div>
     </section>
   );
-}
+});
 
-export default ContactSection
+export default ContactSection;
