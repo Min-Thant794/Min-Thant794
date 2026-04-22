@@ -10,7 +10,7 @@ const HeroSection = ({ contactRef }: HeroSectionProps) => {
   const navigate = useNavigate();
 
   return (
-    <section className="scroll-mt-15 relative mx-auto flex min-h-230 items-center overflow-hidden px-30 py-10">
+    <section className="scroll-mt-15 relative mx-auto flex min-h-230 items-center overflow-hidden px-38 py-10">
       <div className="z-10 grid items-center gap-12 lg:grid-cols-2">
         <div className="space-y-8">
           <div className="inline-block rounded-full border border-outline-variant/20 bg-surface-container-high px-4 py-1.5 text-sm uppercase tracking-widest text-primary">

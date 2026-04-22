@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import { sendContactEmail } from "../../../lib/email";
 
 const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
-  const handleSubmit: React.ComponentProps<"form">["onSubmit"] = (e) => {
+  const [FormData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState<null | "success" | "error">(null);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit: React.ComponentProps<"form">["onSubmit"] = async (e) => {
     e.preventDefault();
+    setIsSending(true);
+    setStatus(null);
+
+    try {
+      await sendContactEmail(FormData);
+      setStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      })
+    } catch (error) {
+      console.log("Email send failed: ", error);
+      setStatus("error");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -57,8 +91,12 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
                   Name
                 </label>
                 <input
+                  name="name"
                   type="text"
+                  value={FormData.name}
+                  onChange={handleChange}
                   placeholder="John Doe"
+                  required
                   className="w-full border-0 border-b border-outline-variant bg-surface-container-low px-3 py-4 text-on-surface outline-none placeholder:text-outline transition-all focus:border-primary focus:ring-0"
                 />
               </div>
@@ -68,8 +106,12 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
                   Email
                 </label>
                 <input
+                  name="email"
                   type="email"
+                  value={FormData.email}
+                  onChange={handleChange}
                   placeholder="john@example.com"
+                  required
                   className="w-full border-0 border-b border-outline-variant bg-surface-container-low px-3 py-4 text-on-surface outline-none placeholder:text-outline transition-all focus:border-primary focus:ring-0"
                 />
               </div>
@@ -80,7 +122,10 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
                 Message
               </label>
               <textarea
+                name="message"
                 rows={4}
+                value={FormData.message}
+                onChange={handleChange}
                 placeholder="How can I help you?"
                 className="w-full resize-none border-0 border-b border-outline-variant bg-surface-container-low px-3 py-4 text-on-surface outline-none placeholder:text-outline transition-all focus:border-primary focus:ring-0"
               />
@@ -88,10 +133,19 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
 
             <button
               type="submit"
+              disabled={isSending}
               className="w-full cursor-pointer rounded-xl bg-linear-to-r from-primary to-tertiary py-4 font-bold text-on-primary-fixed transition-all hover:shadow-[0_10px_30px_rgba(160,255,195,0.2)] active:opacity-75"
             >
-              Send Message
+              {isSending ? "Sending..." : "Send Message"}
             </button>
+
+            {status === "success" && (
+              <p className="text-sm text-green-600">Message sent successfully!</p>
+            )}
+
+            {status === "error" && (
+              <p className="text-sm text-red-500">Failed to send message</p>
+            )}
           </form>
         </div>
       </div>

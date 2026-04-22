@@ -1,35 +1,58 @@
 import { useState, type ChangeEvent, type SubmitEvent } from "react";
-
-type FormData = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+import { sendContactEmail } from "../../../lib/email";
 
 const inputClassName =
   "w-full rounded-lg bg-surface-container p-4 text-on-surface placeholder:text-outline transition-all border-none border-b-2 border-transparent focus:border-primary focus:ring-0 outline-none";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState<FormData>({
+
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState<null | "success" | "error"> (null);
+
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
 
-const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-    setFormData({
-        ...formData,
-        [e.target.name]: e.target.value,
-    });
-};
+  const handleChange = (
+      e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+      ) => {
+      setFormData({
+          ...formData,
+          [e.target.name]: e.target.value,
+      });
+  };
 
-const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
-  e.preventDefault();
-};
+  const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if(isSending) return;
+
+    setIsSending(true);
+    setStatus(null);
+
+    try {
+      await sendContactEmail({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      })
+
+      setStatus("success");
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error) {
+      
+    }
+  };
 
 
   return (
@@ -94,10 +117,19 @@ const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
 
       <button
         type="submit"
+        disabled={isSending}
         className="w-full rounded-xl bg-linear-to-r from-primary to-secondary px-12 py-4 font-bold text-on-primary-fixed shadow-lg transition-all active:scale-95 hover:shadow-primary/20 md:w-auto"
       >
-        Transmit Message
+        {isSending ? "Sending..." : "Transmit Message"}
       </button>
+
+      {status === "success" && (
+        <p className="text-sm text-green-600">Message sent successfully.</p>
+      )}
+
+      {status === "error" && (
+        <p className="text-sm text-red-500">Failed to send message.</p>
+      )}
     </form>
   );
 };
