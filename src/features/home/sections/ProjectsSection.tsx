@@ -1,13 +1,13 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import shoppingPWAIMG from "../../../assets/images/projects/shoppingPWA.png"
+import irbs from "../../../assets/images/projects/IRBS.png"
 
 const ProjectsSection = () => {
 
-  const navigate = useNavigate();
-
   return (
-    <section id="projects" className="scroll-mt-24 bg-surface-container-low py-32">
+    <section id="projects" className="bg-surface-container-low py-32">
       <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
             <h2 className="mb-4 font-headline text-4xl font-bold md:text-5xl">
               Selected Works
@@ -17,64 +17,84 @@ const ProjectsSection = () => {
             </p>
           </div>
 
-          <a 
-          onClick={() => navigate("/projects")}
-          href="#" className="group flex items-center gap-2 font-bold text-primary">
+          <NavLink 
+          to={"/projects"}
+          className="group flex items-center gap-2 font-bold text-primary transition-colors hover:text-primary/80"
+          >
             View All Projects
-            <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
-              arrow_forward
+            <span className="material-symbols-outlined transition-transform duration-300 ease-out group-hover:translate-x-2">
+              arrow_right_alt
             </span>
-          </a>
+          </NavLink>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-12">
-          <div className="ghost-border group relative overflow-hidden rounded-3xl bg-surface-container lg:col-span-8">
+          {/* Project 1 */}
+          <div className="group relative overflow-hidden rounded-3xl border border-outline-variant/30 bg-surface-container/40 backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:border-primary/50 lg:col-span-8">
             <div className="absolute inset-0 z-10 bg-linear-to-t from-surface-container-lowest to-transparent opacity-80" />
+
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuASV2ru4bn3xOrSBl_bku01ZlUFCeBgZtGGIkTU80aeql7KTIcGLNI3GyRTmM23kumQX3sAZugYcsYQGZzsbKXed0TiQu9wPbzdEegDEzQCiGZfqAd8IBUMDHNsJF2-LCqiy47CxPjjiZ040Tl5RcmttoJ2ktVpMPiQBmnkzAFPx6LCq1ZNlKU6MylfrelHuX-n4P7cFH9JhsIBWZbNnpqMcftUCz51aGkU1zHCVb1-vYStSJb9uyXIPlhM-BPB7s0Iew3S7OGLgMw"
+              src={irbs}
               alt="IRBS System Dashboard"
               className="h-125 w-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
             <div className="absolute bottom-0 left-0 z-20 w-full p-12">
               <div className="mb-4 flex gap-2">
-                <span className="rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-on-primary-fixed">
+                <span className="rounded-full border border-primary/30 bg-primary/20 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary shadow-[0_0_15px_rgba(160,255,195,0.3)]">
                   Full-Stack
                 </span>
               </div>
 
-              <h3 className="mb-4 font-headline text-3xl font-bold text-on-background">
+              <h3 className="mb-4 font-headline text-3xl font-bold text-on-background lg:text-4xl">
                 Integrated Rental Booking System (IRBS)
               </h3>
 
               <p className="mb-6 max-w-xl text-on-surface-variant">
-                A comprehensive platform designed to streamline rental workflows, featuring
-                real-time availability tracking and automated booking management.
+                A comprehensive full-stack platform developed as an academic project, featuring real-time availability tracking and automated booking management.
               </p>
 
               <div className="flex gap-4">
-                <a href="#" className="rounded-full bg-surface-container-highest p-3 transition-all hover:bg-primary hover:text-on-primary">
-                  <span className="material-symbols-outlined">link</span>
+                {/* have to put deployed link */}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-outline-variant/50 bg-surface-container-highest/50 transition-all duration-300 hover:border-primary hover:bg-primary hover:text-on-primary"
+                >
+                  <span className="material-symbols-outlined text-[20px]">
+                    open_in_new
+                  </span>
                 </a>
-                <a href="#" className="rounded-full bg-surface-container-highest p-3 transition-all hover:bg-primary hover:text-on-primary">
-                  <span className="material-symbols-outlined">code</span>
+
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Min-Thant794/my-project.git"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-outline-variant/50 bg-surface-container-highest/50 transition-all duration-300 hover:border-primary hover:bg-primary hover:text-on-primary"
+                >
+                  <span className="material-symbols-outlined text-[20px]">
+                    code
+                  </span>
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="ghost-border group relative overflow-hidden rounded-3xl bg-surface-container lg:col-span-4">
+          {/* Project 2 */}
+          <div className="group relative overflow-hidden rounded-3xl border border-outline-variant/30 bg-surface-container/40 backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:border-tertiary/50 lg:col-span-4">
             <div className="absolute inset-0 z-10 bg-linear-to-t from-surface-container-lowest to-transparent opacity-80" />
+
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfZTaDwzGi1ylGag3iB8hMg8k_nfRJ_M3fqN-F26AvonCMQWnjdpapMNVBBiHOfRviTxG46hL30Hk3YE5rEkDvjGFxxpdCxRGGP546aOu9jhkKC9CCmzg-c8EUAwonCkGA8raTCAGRiBE-lw3bYxZSKejZMx2-f-WtEYQIrfK6a7HinaVjf7vkn6yj4HxrdmA4pT9s26O-YJ2a-U4QMPchto_9JSvLLCRp9o8FHetqRhKUmlPN7sJXHhJ1avXdZYBVSmIBstqQsOY"
+              src={shoppingPWAIMG}
               alt="Shopping PWA"
               className="h-125 w-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
 
             <div className="absolute bottom-0 left-0 z-20 p-8">
               <div className="mb-4 flex gap-2">
-                <span className="rounded-full bg-tertiary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-on-tertiary">
-                  PWA
+                <span className="rounded-full border border-tertiary/30 bg-tertiary/20 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-tertiary shadow-[0_0_15px_rgba(122,230,255,0.3)]">
+                  Full Stack
                 </span>
               </div>
 
@@ -83,12 +103,29 @@ const ProjectsSection = () => {
               </h3>
 
               <p className="mb-6 text-on-surface-variant">
-                A mobile-first shopping experience built for speed and offline capabilities.
+                A Progressive Web App developed with mentor guidance, delivering fast, installable, and offline-capable shopping experiences.
               </p>
 
               <div className="flex gap-4">
-                <a href="#" className="rounded-full bg-surface-container-highest p-3 transition-all hover:bg-tertiary hover:text-on-tertiary">
-                  <span className="material-symbols-outlined">open_in_new</span>
+                <a
+                  href="#deployed link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-outline-variant/50 bg-surface-container-highest/50 transition-all duration-300 hover:border-tertiary hover:bg-tertiary hover:text-on-tertiary"
+                >
+                  <span className="material-symbols-outlined text-[20px]">
+                    open_in_new
+                  </span>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Min-Thant794/shoppingWebsite.git"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-outline-variant/50 bg-surface-container-highest/50 transition-all duration-300 hover:border-primary hover:bg-primary hover:text-on-primary"
+                >
+                  <span className="material-symbols-outlined text-[20px]">
+                    code
+                  </span>
                 </a>
               </div>
             </div>
@@ -97,6 +134,6 @@ const ProjectsSection = () => {
       </div>
     </section>
   );
-}
+};
 
-export default ProjectsSection
+export default ProjectsSection;
