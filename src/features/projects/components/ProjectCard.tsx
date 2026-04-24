@@ -1,6 +1,7 @@
 import ProjectBadge from "./ProjectBadge";
 import ProjectInfoBox from "./ProjectInfoBox";
 import type { Project } from "../types";
+import ProjectImageCarousel from "../../../components/ui/ProjectImageCarousel";
 
 type ProjectCardProps = {
   project: Project;
@@ -48,7 +49,9 @@ type ProjectPreviewProps = {
 };
 
 const ProjectPreview = ({ project }: ProjectPreviewProps) => {
-  const shouldShowPlaceholder = project.usePlaceholder || !project.image;
+  const images = project.images ?? [];
+  const shouldShowPlaceholder =
+    project.usePlaceholder || !project.images || project.images.length === 0;
 
   return (
     <div className="group relative">
@@ -58,10 +61,9 @@ const ProjectPreview = ({ project }: ProjectPreviewProps) => {
         {shouldShowPlaceholder ? (
           <ProjectPlaceholder />
         ) : (
-          <img
-            src={project.image}
+          <ProjectImageCarousel
+            images={images}
             alt={project.imageAlt || project.title}
-            className="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105"
           />
         )}
 

@@ -7,7 +7,7 @@ export type ProjectInfo = {
 export type Project = {
     title: string;
     description: string;
-    image?: string;
+    images?: string[];
     imageAlt?: string;
     liveDemoUrl?: string;
     githubUrl?: string;

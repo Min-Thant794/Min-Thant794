@@ -1,6 +1,5 @@
 import ProjectsHeader from "../features/projects/components/ProjectsHeader";
 import ProjectCard from "../features/projects/components/ProjectCard";
-import TerminalSection from "../features/projects/components/TerminalSection";
 import { projects } from "../features/projects/data";
 
 const Projects = () => {
@@ -16,8 +15,6 @@ const Projects = () => {
             reverse={index % 2 === 1}
           />
         ))}
-
-        <TerminalSection />
       </main>
     </div>
   );

@@ -1,11 +1,16 @@
 import type { Project } from "./types";
+import p1HomePage from "../../assets/images/projects/IRBS.png"
+import p1CarPage from "../../assets/images/projects/carListing.png"
+import p1BookingPage from "../../assets/images/projects/booking.png"
+import p2HomePage from "../../assets/images/projects/shoppingPWA.png"
+import p2DealsPage from "../../assets/images/projects/deals.png"
+import p2CartPage from "../../assets/images/projects/cart.png"
 
 export const projects: Project[] = [
     {
         title: "Integrated Rental Booking System (IRBS)",
         description: "Deep drives into technical architecture, problem-solving, and full-stack execution of complex ecosystems.",
-        image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAU7EDCNt-bIPi1F5A7Lfn7n_Vehzgou5ikliBYmv7oLpJimmxFwVS-nzz_VBhXQah5WUcGy1nAp5OyX2cdlIfAzX0K4m7z29TID0JLhtlE5_ogXwo9_cNIUbJH1ox6-vBkNaTCmkcXiiz-N3EB2Z3GBvxvCfZWq_F6hLds-uOh34Y3CSLxRSmRBVR6s1f0wG1qqwJwnKuhIiGNWTWw3IdLh7Mr8Wmtt9TS1WNLRidSTprgTlBO_S0uqrI9ahc3DIaWSOlL1oWs61I",
+        images: [p1HomePage, p1CarPage, p1BookingPage],
         imageAlt:
         "Modern dashboard interface for rental management with charts and listing cards",
         liveDemoUrl: "#",
@@ -30,8 +35,7 @@ export const projects: Project[] = [
         title: "Omni-Channel Shopping PWA",
         description:
         "A mobile-first commerce experience designed for speed, resilience, and app-like usability.",
-        image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD1CrFpehiv-269bwfv6Mrs3e7A3NFxOzVefKsylQuOsJ2E6UlSfn3TM7ocsqrYiimrZlH1O65Z0w1_hKWrwIOsu93JZzn449-jxPpp2rN_C-pT-iRW7idodPT-yuF0qrHfEQzFutJAfBjHH3ncRzSMSGiR2fOUWaQ8r049QZxhukthx3zrG7oX-3kPzanmlF5TVw2bbbHmOub2-kiEQywqeHZh-DsbOfmanR1PO7dGlywXLBwbkrP3dGRx7diBcibaBkhfcFtGExc",
+        images: [p2HomePage, p2DealsPage, p2CartPage],
         imageAlt:
         "Mobile e-commerce interface with product cards and checkout experience",
         liveDemoUrl: "#",

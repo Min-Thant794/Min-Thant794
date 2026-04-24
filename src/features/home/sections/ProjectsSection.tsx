@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
-import shoppingPWAIMG from "../../../assets/images/projects/shoppingPWA.png"
-import irbs from "../../../assets/images/projects/IRBS.png"
+import ProjectImageCarousel from "../../../components/ui/ProjectImageCarousel";
+import p1HomePage from "../../../assets/images/projects/IRBS.png"
+import p1CarPage from "../../../assets/images/projects/carListing.png"
+import p1BookingPage from "../../../assets/images/projects/booking.png"
+import p2HomePage from "../../../assets/images/projects/shoppingPWA.png"
+import p2DealsPage from "../../../assets/images/projects/deals.png"
+import p2CartPage from "../../../assets/images/projects/cart.png"
 
 const ProjectsSection = () => {
 
@@ -33,10 +38,9 @@ const ProjectsSection = () => {
           <div className="group relative overflow-hidden rounded-3xl border border-outline-variant/30 bg-surface-container/40 backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:border-primary/50 lg:col-span-8">
             <div className="absolute inset-0 z-10 bg-linear-to-t from-surface-container-lowest to-transparent opacity-80" />
 
-            <img
-              src={irbs}
-              alt="IRBS System Dashboard"
-              className="h-125 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            <ProjectImageCarousel
+              images={[p1HomePage, p1CarPage, p1BookingPage]}
+              alt="IRBS project preview"
             />
 
             <div className="absolute bottom-0 left-0 z-20 w-full p-12">
@@ -85,10 +89,9 @@ const ProjectsSection = () => {
           <div className="group relative overflow-hidden rounded-3xl border border-outline-variant/30 bg-surface-container/40 backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:border-tertiary/50 lg:col-span-4">
             <div className="absolute inset-0 z-10 bg-linear-to-t from-surface-container-lowest to-transparent opacity-80" />
 
-            <img
-              src={shoppingPWAIMG}
-              alt="Shopping PWA"
-              className="h-125 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            <ProjectImageCarousel
+              images={[p2HomePage, p2DealsPage, p2CartPage]}
+              alt="Shopping PWA preview"
             />
 
             <div className="absolute bottom-0 left-0 z-20 p-8">
