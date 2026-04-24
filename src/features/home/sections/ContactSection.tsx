@@ -43,18 +43,18 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
     <section
       ref={ref}
       id="contact"
-      className="scroll-mt-24 relative overflow-hidden bg-surface-container-low py-32"
+      className="scroll-mt-24 relative overflow-hidden bg-surface-container-low py-20 md:py-28 lg:py-32"
     >
       <div className="absolute right-0 top-0 h-full w-1/3 bg-primary/5 blur-[120px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-8">
         <div className="grid gap-20 lg:grid-cols-2">
           <div>
-            <h2 className="mb-8 font-headline text-5xl font-bold">
+            <h2 className="mb-6 font-headline text-4xl font-bold sm:text-5xl">
               Get in <span className="italic text-primary">Touch</span>
             </h2>
 
-            <p className="mb-12 max-w-md text-xl leading-relaxed text-on-surface-variant">
+            <p className="mb-10 max-w-md text-base leading-relaxed text-on-surface-variant sm:text-lg md:text-xl">
               I&apos;m currently looking for internships and junior developer roles. If you have a project in mind or just want to chat, feel free to drop a message.
             </p>
 
@@ -65,7 +65,9 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-on-surface-variant">Email</p>
-                  <p className="text-lg font-medium text-on-surface">minthanthtun29@gmail.com</p>
+                  <p className="break-all text-base font-medium text-on-surface sm:text-lg">
+                    minthanthtun29@gmail.com
+                  </p>
                 </div>
               </div>
 
@@ -83,7 +85,7 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
 
           <form
             onSubmit={handleSubmit}
-            className="ghost-border space-y-6 rounded-3xl bg-surface-container p-10"
+            className="ghost-border space-y-6 rounded-3xl bg-surface-container p-5 sm:p-8 lg:p-10"
           >
             <div className="grid gap-6 md:grid-cols-2">
               <div className="space-y-2">

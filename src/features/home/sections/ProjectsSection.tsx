@@ -10,7 +10,7 @@ import p2CartPage from "../../../assets/images/projects/cart.png"
 const ProjectsSection = () => {
 
   return (
-    <section id="projects" className="bg-surface-container-low py-32">
+    <section id="projects" className="bg-surface-container-low py-20 md:py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-8">
         <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
@@ -43,14 +43,14 @@ const ProjectsSection = () => {
               alt="IRBS project preview"
             />
 
-            <div className="absolute bottom-0 left-0 z-20 w-full p-12">
+            <div className="absolute bottom-0 left-0 z-20 w-full p-5 sm:p-8 lg:p-12">
               <div className="mb-4 flex gap-2">
                 <span className="rounded-full border border-primary/30 bg-primary/20 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary shadow-[0_0_15px_rgba(160,255,195,0.3)]">
                   Full-Stack
                 </span>
               </div>
 
-              <h3 className="mb-4 font-headline text-3xl font-bold text-on-background lg:text-4xl">
+              <h3 className="mb-4 font-headline text-2xl font-bold text-on-background sm:text-3xl lg:text-4xl">
                 Integrated Rental Booking System (IRBS)
               </h3>
 
@@ -94,14 +94,14 @@ const ProjectsSection = () => {
               alt="Shopping PWA preview"
             />
 
-            <div className="absolute bottom-0 left-0 z-20 p-8">
+            <div className="absolute bottom-0 left-0 z-20 w-full p-5 sm:p-8">
               <div className="mb-4 flex gap-2">
                 <span className="rounded-full border border-tertiary/30 bg-tertiary/20 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-tertiary shadow-[0_0_15px_rgba(122,230,255,0.3)]">
                   Full Stack
                 </span>
               </div>
 
-              <h3 className="mb-3 font-headline text-2xl font-bold text-on-background">
+              <h3 className="mb-4 font-headline text-2xl font-bold text-on-background sm:text-3xl lg:text-4xl">
                 Shopping PWA
               </h3>
 

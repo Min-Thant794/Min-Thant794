@@ -13,22 +13,23 @@ const Home = () => {
 
   return (
     <div className="pt-10">
-        <HeroSection contactRef = {contactRef}/>
-        <AboutSection />
-        <SkillsSection />
-        <ProjectsSection />
+      <HeroSection contactRef={contactRef} />
 
-        <section className="py-32">
-            <div className="mx-auto max-w-7xl px-8">
-            <div className="grid gap-20 lg:grid-cols-2">
-                <ExperienceSection />
-                <EducationSection />
-            </div>
-            </div>
-        </section>
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
 
-        <ContactSection ref={contactRef} />
-    </div>
+      <section className="py-20 md:py-28 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
+            <ExperienceSection />
+            <EducationSection />
+          </div>
+        </div>
+      </section>
+
+      <ContactSection ref={contactRef} />
+  </div>
   )
 }
 

@@ -1,6 +1,6 @@
 const SkillsSection = () => {
   return (
-    <section id="skills" className="scroll-mt-24 py-32">
+    <section id="skills" className="scroll-mt-24 py-20 md:py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-8">
         <div className="mb-20">
           <h2 className="mb-4 font-headline text-4xl font-bold md:text-5xl">

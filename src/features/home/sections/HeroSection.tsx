@@ -10,27 +10,27 @@ const HeroSection = ({ contactRef }: HeroSectionProps) => {
   const navigate = useNavigate();
 
   return (
-    <section className="scroll-mt-15 relative mx-auto flex min-h-230 items-center overflow-hidden px-38 py-10">
-      <div className="z-10 grid items-center gap-12 lg:grid-cols-2">
+    <section className="scroll-mt-24 relative mx-auto flex min-h-[calc(100vh-5rem)] items-center overflow-hidden px-5 py-20 sm:px-6 md:py-24 lg:min-h-screen lg:px-16 xl:px-32">
+      <div className="z-10 mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2">
         <div className="space-y-8">
           <div className="inline-block rounded-full border border-outline-variant/20 bg-surface-container-high px-4 py-1.5 text-sm uppercase tracking-widest text-primary">
             Available for Opportunities
           </div>
 
-          <h1 className="font-headline text-6xl font-bold leading-tight tracking-tighter md:text-8xl">
+          <h1 className="font-headline text-4xl font-bold leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
             Hi, I&apos;m <span className="text-glow text-primary">Min Thant Tun</span>
           </h1>
 
-          <p className="max-w-xl text-xl leading-relaxed text-on-surface-variant md:text-2xl">
+          <p className="max-w-xl text-base leading-relaxed text-on-surface-variant sm:text-lg md:text-xl lg:text-2xl">
             Aspiring Full-Stack Developer specialized in{" "}
             <span className="font-semibold text-on-surface">React &amp; Node.js</span>,
             currently mastering Java SE to build robust enterprise applications.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-col gap-4 pt-4 sm:flex-row sm:flex-wrap">
             <button
               onClick={() => navigate("/projects")}
-              className="cursor-pointer rounded-xl bg-linear-to-br from-primary to-tertiary px-8 py-4 text-lg font-bold text-on-primary-fixed transition-all hover:shadow-[0_0_30px_rgba(160,255,195,0.2)] active:opacity-70"
+              className="w-full cursor-pointer rounded-xl bg-linear-to-br from-primary to-tertiary px-6 py-3 text-base font-bold text-on-primary-fixed transition-all hover:shadow-[0_0_30px_rgba(160,255,195,0.2)] active:opacity-70 sm:w-auto sm:px-8 sm:py-4 sm:text-lg"
             >
               View Projects
             </button>
@@ -39,7 +39,7 @@ const HeroSection = ({ contactRef }: HeroSectionProps) => {
               onClick={() => {
                 contactRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
               }}
-              className="cursor-pointer rounded-xl border border-outline-variant/30 bg-surface-container-high px-8 py-4 text-lg font-bold text-on-surface transition-all hover:bg-surface-container active:opacity-70"
+              className="w-full cursor-pointer rounded-xl border border-outline-variant/30 bg-surface-container-high px-6 py-3 text-base font-bold text-on-surface transition-all hover:bg-surface-container active:opacity-70 sm:w-auto sm:px-8 sm:py-4 sm:text-lg"
             >
               Contact Me
             </button>
