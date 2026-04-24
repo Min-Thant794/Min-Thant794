@@ -110,10 +110,12 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       <div className="md:hidden">
-        {/* Backdrop — visual only, no click handler needed anymore */}
+        {/* Backdrop */}
         <div
-          className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
-            isMobileMenuOpen ? "opacity-100 pointer-events-none" : "opacity-0 pointer-events-none"
+          aria-hidden="true"
+          onClick={() => setIsMobileMenuOpen(false)}
+          className={`fixed inset-0 z-9998 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
+            isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         />
 
@@ -122,7 +124,7 @@ const NavBar = () => {
           id={mobileMenuId}
           ref={menuRef}
           className={[
-            "fixed inset-x-4 top-24 z-50 origin-top rounded-2xl",
+            "fixed inset-x-4 top-24 z-9999 origin-top rounded-2xl",
             "border border-white/8 bg-[#0d0f14]/98 shadow-2xl backdrop-blur-2xl",
             "transition-all duration-300 ease-out",
             isMobileMenuOpen
