@@ -7,7 +7,7 @@ import CTASection from "../features/about/sections/CTASection"
 
 const About = () => {
   return (
-    <div className="pt-30 px-30">
+    <div className="pt-30 px-35">
       <HeroSection/>
       
       <section className="space-y-32">

@@ -27,7 +27,7 @@ const ResumeExperienceSection = () => {
                     <div className="mb-2 flex items-start justify-between gap-4">
                     <h4 className="text-xl font-bold text-on-surface">{item.title}</h4>
                     <span
-                        className={`rounded-full px-3 py-1 font-label text-xs ${
+                        className={`rounded-full w-3/11 text-center px-3 py-1 font-label text-xs ${
                         item.isCurrent
                             ? "bg-surface-container-highest text-primary"
                             : "bg-surface-container-highest text-on-surface-variant"

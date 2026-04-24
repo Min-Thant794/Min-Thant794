@@ -8,80 +8,81 @@ import type {
 } from "./types";
 
 export const resumeContactItems: ResumeContactItem[] = [
-  { icon: "location_on", value: "Yangon, Myanmar" },
-  { icon: "mail", value: "hello@minthanttun.dev" },
-  { icon: "language", value: "www.minthanttun.dev" },
-  { icon: "code", value: "github.com/minthanttun" },
+  { icon: "location_on", value: "Singapore" },
+  { icon: "mail", value: "minthanthtun@gmail.com" },
+  { icon: "language", value: "https://min-thant794.github.io/Min-Thant794/" },
+  { icon: "code", value: "https://github.com/Min-Thant794" },
 ];
 
 export const resumeExperienceItems: ResumeExperienceItem[] = [
   {
-    title: "Senior Software Engineer",
-    period: "2021 — PRESENT",
-    company: "TechNexus Solutions",
+    title: "Full-Stack Developer (Academic Projects)",
+    period: "2024 — PRESENT",
+    company: "Personal & University Projects",
     isCurrent: true,
     points: [
-      "Led the architectural redesign of a microservices-based e-commerce platform, resulting in a 40% improvement in load times.",
-      "Implemented CI/CD pipelines using GitHub Actions, reducing deployment errors by 25%.",
-      "Mentored a team of 5 junior developers, conducting code reviews and technical workshops.",
+      "Designed and developed a full-stack Integrated Rental Booking System (IRBS) using React, Node.js, and MongoDB.",
+      "Implemented role-based authentication, booking workflows, and real-time availability handling using REST APIs.",
+      "Built responsive user interfaces with Tailwind CSS and improved user experience with smooth transitions and structured layouts.",
     ],
   },
   {
-    title: "Frontend Developer",
-    period: "2018 — 2021",
-    company: "Creative Digital Agency",
+    title: "Web Development Trainee",
+    period: "2023",
+    company: "Light Computer Co. Ltd.",
     points: [
-      "Developed responsive web applications for international clients using React and Tailwind CSS.",
-      "Optimized frontend assets and states, achieving a 95+ score on Google Lighthouse across core vitals.",
-      "Collaborated with UI/UX designers to translate Figma prototypes into pixel-perfect interactive components.",
+      "Completed a web development bootcamp focusing on HTML, CSS, and JavaScript fundamentals.",
+      "Developed a basic calculator mobile application as part of hands-on training.",
+      "Gained practical experience in building UI components and structuring frontend applications.",
     ],
   },
 ];
 
 export const resumeProjects: ResumeProjectItem[] = [
   {
-    title: "Aether Dashboard (SaaS)",
+    title: "Integrated Rental Booking System (IRBS)",
     description:
-      "A high-performance analytics dashboard for cloud infrastructure monitoring, featuring real-time data visualization with D3.js and WebSocket integration.",
-    tags: ["NEXT.JS", "TYPESCRIPT", "POSTGRESQL"],
+      "A full-stack web application featuring role-based access, booking management, and real-time availability tracking using modern web technologies.",
+    tags: ["REACT", "NODE.JS", "MONGODB", "EXPRESS"],
   },
   {
-    title: "Prism Code Editor",
+    title: "Omni-Channel Shopping PWA",
     description:
-      "An open-source, browser-based IDE with integrated terminal support and collaborative editing capabilities using Yjs CRDTs.",
-    tags: ["REACT", "NODE.JS", "WEB CONTAINERS"],
+      "A Progressive Web App built with mentor guidance, delivering fast, installable, and offline-capable shopping experiences.",
+    tags: ["NEXT.JS", "TYPESCRIPT", "TAILWIND", "PWA"],
   },
 ];
 
 export const resumeSkillGroups: ResumeSkillGroup[] = [
   {
     title: "Frontend",
-    items: ["React/Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
+    items: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Go", "Python", "PostgreSQL", "Redis"],
+    items: ["Node.js", "Express", "MongoDB", "REST APIs"],
   },
   {
-    title: "DevOps & Tools",
-    items: ["Docker", "AWS", "Kubernetes", "CI/CD"],
+    title: "Tools & Technologies",
+    items: ["Git", "GitHub", "Postman", "Vite", "Figma"],
   },
 ];
 
 export const resumeEducationItems: ResumeEducationItem[] = [
   {
-    title: "B.Sc. in Computer Science",
-    organization: "University of Engineering",
-    meta: "Class of 2018",
+    title: "B.Sc. (Hons) Computer Science",
+    organization: "Coventry University (via PSB Academy, Singapore)",
+    meta: "Completed 2026",
   },
   {
-    title: "Cloud Architect Certification",
-    organization: "Amazon Web Services",
-    meta: "Issued 2022",
+    title: "Diploma in Computer Science",
+    organization: "NCC Education / NVL University",
+    meta: "Completed 2023",
   },
 ];
 
 export const resumeLanguages: ResumeLanguageItem[] = [
   { name: "Burmese", level: "Native" },
   { name: "English", level: "Fluent" },
+  { name: "Japanese", level: "Intermediate (N3 Level)" },
 ];
