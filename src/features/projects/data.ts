@@ -52,4 +52,31 @@ export const projects: Project[] = [
         },
         ],
     },
+    {
+        title: "Real-time Messaging Platform",
+        description:
+            "A deep dive into real-time communication and system architecture.",
+
+        techStack: [
+            "Vite",
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Socket.io",
+            "Redis",
+            "JWT",
+        ],
+
+        isWip: true,
+        usePlaceholder: true,
+
+        info: [
+            {
+            heading: "Description",
+            description:
+                "Focuses on bidirectional data flow, WebSocket communication, and scalable backend services.",
+            accent: "tertiary",
+            },
+        ],
+    }
 ]

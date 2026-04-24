@@ -7,10 +7,12 @@ export type ProjectInfo = {
 export type Project = {
     title: string;
     description: string;
-    image: string;
-    imageAlt: string;
-    liveDemoUrl: string;
-    githubUrl: string;
+    image?: string;
+    imageAlt?: string;
+    liveDemoUrl?: string;
+    githubUrl?: string;
     techStack: string[];
     info: ProjectInfo[];
+    isWip?: boolean;
+    usePlaceholder?: boolean;
 }

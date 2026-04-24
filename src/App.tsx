@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
-import Education from "./pages/Education";
+//import Education from "./pages/Education";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
@@ -26,7 +27,7 @@ const AnimatedRoutes = () => {
           <Route path="/skills" element={<PageTransition><Skills /></PageTransition>} />
           <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
           <Route path="/experience" element={<PageTransition><Experience /></PageTransition>} />
-          <Route path="/education" element={<PageTransition><Education /></PageTransition>} />
+          {/* <Route path="/education" element={<PageTransition><Education /></PageTransition>} /> */}
           <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           <Route path="/resume" element={<PageTransition><Resume/></PageTransition>}/>
           <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
@@ -39,6 +40,7 @@ const AnimatedRoutes = () => {
 const App = () => {
   return (
       <BrowserRouter basename="/Min-Thant794/">
+          <ScrollToTop/>
           <AnimatedRoutes/>
       </BrowserRouter>
   )
