@@ -50,7 +50,10 @@ const ContactForm = () => {
         message: ""
       });
     } catch (error) {
-      
+      console.error(error);
+      setStatus("error");
+    } finally {
+      setIsSending(false);
     }
   };
 
