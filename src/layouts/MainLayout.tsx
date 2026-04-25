@@ -15,11 +15,12 @@ const MainLayout = () => {
             <main className="min-w-0 overflow-x-hidden">
                 <Outlet/>
                 <ScrollToTopButton
-                targetRef = {topRef}
-                offset={0}
-                className="fixed cursor-pointer font-semibold bottom-8 right-8 z-50 rounded-full bg-primary px-4 py-3 text-on-primary-fixed shadow-lg transition active:scale-95"
-                >
-                ↑
+                    targetRef={topRef}
+                    offset={0}
+                    className="fixed z-50 cursor-pointer font-semibold bottom-8 right-8 flex items-center justify-center h-12 w-12 rounded-full bg-primary text-on-primary-fixed shadow-lg transition active:scale-100 sm:bottom-6 sm:right-6 sm:h-15 sm:w-15
+                    "
+                    >
+                    ↑
                 </ScrollToTopButton>
             </main>
             <Footer/>
