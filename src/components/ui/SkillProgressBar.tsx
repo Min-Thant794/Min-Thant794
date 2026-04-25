@@ -1,29 +1,21 @@
 type SkillProgressBarProps = {
   title: string;
-  percentage: number;
   description: string;
 };
 
-const SkillProgressBar = ({title, percentage, description} : SkillProgressBarProps) => {
-    return (
-        <div className="space-y-2">
-            <div className="flex justify-between items-end">
-                <span className="font-headline font-medium">{title}</span>
-                <span className="text-xs text-primary font-label">{percentage}%</span>
-            </div>
+const SkillProgressBar = ({ title, description }: SkillProgressBarProps) => {
+  return (
+    <div className="group">
+      <h3 className="font-headline font-bold text-lg text-primary mb-2 flex items-center gap-2">
+        <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+        {title}
+      </h3>
 
-            <div className="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden">
-                <div
-                className="h-full bg-primary"
-                style={{ width: `${percentage}%` }}
-                />
-            </div>
-
-            <p className="text-sm text-on-surface-variant leading-snug">
-                {description}
-            </p>
-        </div>
-    )
-}
+      <p className="text-sm text-on-surface-variant leading-relaxed pl-3.5 border-l-2 border-primary/20 group-hover:border-primary/50 transition-colors">
+        {description}
+      </p>
+    </div>
+  );
+};
 
 export default SkillProgressBar;

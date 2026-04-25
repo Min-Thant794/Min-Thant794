@@ -6,29 +6,29 @@ type FoundationItem = {
 };
 
 const FoundationItems: FoundationItem[] = [
-    {
-        title: "JS (Node/ TS)",
-        tag: "Primary",
-        tagClassName: "bg-primary/10 text-primary",
-        description: "Modern syntax, architectural patterns, and functional programming concepts."
-    },
-    {
-        title: "Python",
-        tag: "Logic",
-        tagClassName: "bg-tertiary/10 text-tertiary",
-        description: "Data structures, automation scripting, and backend integrations."
-    },
-    {
-        title: "Java SE",
-        tag: "Core",
-        tagClassName: "bg-outine-variant/20 text-outline-variant",
-        description: "Object-orientd design, threading, and enterprise logic patterns."
-    },
+  {
+    title: "JavaScript / TypeScript",
+    tag: "Primary",
+    tagClassName: "bg-primary/10 text-primary",
+    description: "Core language for building React interfaces, Node.js APIs, and full-stack web applications."
+  },
+  {
+    title: "Python",
+    tag: "Logic",
+    tagClassName: "bg-tertiary/10 text-tertiary",
+    description: "Used for programming fundamentals, data structures, automation, and academic projects."
+  },
+  {
+    title: "Java SE",
+    tag: "Learning",
+    tagClassName: "bg-outline-variant/20 text-outline-variant",
+    description: "Basic object-oriented programming concepts and backend development fundamentals."
+  },
 ];
 
 const FoundationsCard = () => {
     return (
-        <section className="flex flex-col rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 sm:p-8 md:col-span-4">
+        <section className="flex flex-col row-span-2 rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 sm:p-8 md:col-span-4">
             <div className="mb-8 flex items-center gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-tertiary/10 text-tertiary">
                     <span className="material-symbols-outlined">

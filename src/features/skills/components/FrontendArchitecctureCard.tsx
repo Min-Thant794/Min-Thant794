@@ -25,13 +25,12 @@ const FrontendArchitecctureCard = () => {
             <div className="space-y-6">
                 <SkillProgressBar
                 title="React Ecosystem"
-                percentage={95}
-                description="State management, hooks, and component lifecycles."
+                description="Built full-stack apps using React, hooks, and routing."
                 />
+
                 <SkillProgressBar
                 title="Tailwind CSS"
-                percentage={90}
-                description="Utility-first styling and responsive design systems."
+                description="Responsive UI design and component styling."
                 />
             </div>
 

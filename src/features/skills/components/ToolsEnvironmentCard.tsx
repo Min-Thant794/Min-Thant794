@@ -4,14 +4,14 @@ const tools = [
     {name: "VS Code", icon: "terminal"},
     {name: "GitHub", icon: "account_tree"},
     {name: "Figma", icon: "design_services"},
-    {name: "Unity", icon: "sports_esports"},
+    {name: "Postman", icon: "sync_alt"},
     {name: "Notion", icon: "sticky_note_2"},
     {name: "Vercel", icon: "deployed_code"},
 ];
 
 const ToolsEnvironmentCard = () => {
     return (
-        <section className="rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 sm:p-8 md:col-span-6">
+        <section className="rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 sm:p-8 md:col-span-12">
             <div className="mb-8 flex items-center gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-outline-variant/10 text-on-surface">
                     <span className="material-symbols-outlined">
@@ -23,7 +23,7 @@ const ToolsEnvironmentCard = () => {
                 </h2>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-5 sm:grid-cols-6 gap-4">
                 {tools.map((tool) => (
                         <ToolCard key={tool.name} name={tool.name} icon={tool.icon}/>
                 ))}
