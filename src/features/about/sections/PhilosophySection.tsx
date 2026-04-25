@@ -27,25 +27,25 @@ const PhilosophySection = () => {
 
             <div className="relative z-10 max-w-3xl">
                 <span className="mb-4 block font-label text-xs uppercase tracking-[0.2em] text-tertiary">
-                Core Philosophy
+                  Development Mindset
                 </span>
 
                 <h3 className="mb-8 font-headline text-2xl font-bold leading-tight sm:text-3xl md:text-4xl">
-                Driven by the pursuit of{" "}
-                <span className="italic text-primary">impactful solutions.</span>
+                  Focused on building{" "}
+                  <span className="italic text-primary">practical and user-friendly software.</span>
                 </h3>
 
                 <div className="grid gap-10 md:grid-cols-2">
                 <PhilosophyCard
-                    icon="psychology"
-                    title='The "Why" Before "How"'
-                    description="I approach every line of code with a fundamental question: What problem is this truly solving? This mindset ensures that development remains purposeful and user-focused."
+                  icon="psychology"
+                  title="Purpose Before Features"
+                  description="I try to understand the real problem before adding features. This helps me build applications that are useful, clear, and easier for users to interact with."
                 />
 
                 <PhilosophyCard
-                    icon="terminal"
-                    title="Continuous Iteration"
-                    description="The transition from learner to developer is a permanent state of being. Every project is a lesson in new technologies, performance tuning, and architectural patterns."
+                  icon="terminal"
+                  title="Learning Through Building"
+                  description="Most of my growth comes from creating projects, fixing errors, improving code structure, and learning how frontend and backend systems work together."
                 />
                 </div>
             </div>

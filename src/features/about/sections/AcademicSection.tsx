@@ -16,14 +16,14 @@ const AcademicSection = () => {
                 </p>
 
                 <p className="mb-4 font-headline text-xl font-bold sm:text-2xl">
-                    Academic Excellence
+                    Academic Foundation
                 </p>
 
                 <p className="mb-6 leading-relaxed text-on-surface-variant">
-                    The foundation was laid at Coventry University, where the curriculum
-                    wasn&apos;t just about syntax—it was about the philosophy of
-                    computation. It was here that I learned to deconstruct complex
-                    systems and understand the underlying mechanics of modern software.
+                    My Computer Science studies helped me build a strong foundation in
+                    programming, software development, databases, algorithms, and problem-solving.
+                    It also gave me the opportunity to apply these concepts through practical
+                    coursework and my individual final-year project.
                 </p>
 
                 <div className="h-1 w-full overflow-hidden rounded-full bg-surface-container-highest">
@@ -34,22 +34,19 @@ const AcademicSection = () => {
 
             <div className="space-y-6">
                 <h2 className="border-l-4 border-primary pl-4 font-headline text-2xl font-bold sm:pl-6 sm:text-3xl">
-                The Academic Catalyst
+                From Academic Learning to Practical Development
                 </h2>
 
                 <p className="text-base leading-relaxed text-on-surface-variant sm:text-lg">
-                My time at Coventry University served as more than just a formal
-                education; it was a period of intense curiosity and rigorous testing.
-                Immersed in an environment that championed both theoretical computer
-                science and practical application, I found my rhythm in the
-                intersection of data structures and user-centric design.
+                During my BSc Computer Science journey, I gradually became more interested in
+                full-stack development because it allowed me to understand both the user
+                interface and the backend logic behind a complete system.
                 </p>
 
                 <p className="text-base leading-relaxed text-on-surface-variant sm:text-lg">
-                Transitioning from simple classroom assignments to complex,
-                architecture-heavy projects, I realized that my passion wasn&apos;t
-                just in making things work—it was in making them work optimally for
-                real-world scenarios.
+                My individual project, an Integrated Rental Booking System, helped me apply
+                React, Node.js, Express, MongoDB, authentication, role-based access, and booking
+                management in a more realistic software development workflow.
                 </p>
             </div>
         </div>

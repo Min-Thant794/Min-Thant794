@@ -1,7 +1,7 @@
 const tags = [
-  "Full-Stack Thinking",
-  "Scalable Systems",
-  "Performance Optimization",
+  "React Development",
+  "Node.js Backend",
+  "Project-Based Learning",
 ];
 
 const GrowthSection = () => {
@@ -10,15 +10,14 @@ const GrowthSection = () => {
             <div className="glass-panel flex flex-col justify-between rounded-xl p-5 sm:p-8 md:col-span-2 lg:p-10">
                 <div>
                 <h3 className="mb-4 font-headline text-2xl font-bold">
-                    Bridging the Gap
+                    Growing Through Real Projects
                 </h3>
 
                 <p className="mb-6 leading-relaxed text-on-surface-variant">
-                    The leap from a student to a full-stack developer was defined by my
-                    first few real-world applications. No longer was I coding for a
-                    grade; I was coding for accessibility, scalability, and security. I
-                    realized that full-stack development is the ultimate form of digital
-                    architecture.
+                    My growth as a developer has come from building practical projects such as my
+                    Integrated Rental Booking System and a Shopping Progressive Web App developed
+                    with my mentor. These projects helped me understand authentication, CRUD
+                    operations, database design, API integration, and frontend user experience.
                 </p>
                 </div>
 
@@ -45,13 +44,14 @@ const GrowthSection = () => {
                 </span>
 
                 <h3 className="mb-4 font-headline text-2xl font-bold">
-                Kinetic Energy
+                Continuous Improvement
                 </h3>
 
                 <p className="text-sm leading-relaxed text-on-surface-variant">
-                In software, standing still is falling behind. I thrive in the rapid
-                evolution of the web ecosystem, constantly absorbing new frameworks
-                while respecting the fundamentals of computer science.
+                I am actively building full-stack applications with <span className="text-tertiary font-semibold">React</span> and <span className="text-tertiary font-semibold">Node.js</span> while
+                learning <span className="text-secondary font-semibold">Java</span> for stronger backend fundamentals. My next focus is <span className="text-tertiary font-semibold">DevOps</span>,
+                where I aim to understand deployment pipelines, cloud environments, and system
+                scalability.
                 </p>
             </div>
         </div>
