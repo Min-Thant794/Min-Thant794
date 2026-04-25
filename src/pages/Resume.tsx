@@ -11,10 +11,10 @@ const Resume = () => {
     return (
         <div className="bg-background font-body text-on-surface selection:bg-primary/30">
 
-            <main className="mx-auto max-w-5xl px-4 pb-20 pt-32 md:px-8">
+            <main className="mx-auto max-w-5xl px-4 pb-20 pt-28 sm:px-5 md:px-8 md:pt-32">
                 <ResumeActionHeader />
 
-                <div className="print-container relative overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low p-8 shadow-2xl md:p-12">
+                <div className="print-container relative overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 shadow-2xl sm:p-8 md:p-12">
                 <div className="no-print absolute left-0 top-0 h-full w-2 bg-primary" />
 
                 <ResumeProfileHeader />

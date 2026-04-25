@@ -1,7 +1,7 @@
 const AdvocacySection = () => {
   return (
-    <section className="relative overflow-hidden rounded-3xl bg-surface-container-low p-12">
-      <div className="absolute right-0 top-0 p-12 opacity-10">
+    <section className="relative overflow-hidden rounded-3xl bg-surface-container-low p-5 sm:p-8 lg:p-12">
+      <div className="absolute right-0 top-0 hidden p-12 opacity-10 sm:block">
         <span
           className="material-symbols-outlined text-[160px] text-primary"
           data-weight="fill"
@@ -15,11 +15,11 @@ const AdvocacySection = () => {
           Community & Earth
         </span>
 
-        <h2 className="mb-8 font-headline text-4xl font-bold">
+        <h2 className="mb-8 font-headline text-3xl font-bold sm:text-4xl">
           Environmental Advocacy
         </h2>
 
-        <div className="grid gap-12 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
           <div className="space-y-6">
             <div className="flex gap-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10">

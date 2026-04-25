@@ -1,7 +1,7 @@
 const CTASection = () => {
     return (
-        <section className="mt-40 rounded-xl border border-outline-variant/5 bg-surface-container-low py-20 text-center">
-            <h2 className="mb-6 font-headline text-4xl font-bold">
+        <section className="mt-24 rounded-xl border border-outline-variant/5 bg-surface-container-low px-5 py-16 text-center sm:px-8 md:mt-32 lg:mt-40 lg:py-20">
+            <h2 className="mb-6 font-headline text-3xl font-bold sm:text-4xl">
                 Let&apos;s build something meaningful.
             </h2>
 
@@ -13,14 +13,14 @@ const CTASection = () => {
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
                 <a
                 href="#contact"
-                className="inline-block rounded-xl bg-linear-to-r from-primary to-secondary px-10 py-4 text-lg font-bold text-on-primary-fixed transition-all hover:shadow-[0_0_30px_rgba(160,255,195,0.2)] active:scale-95"
+                className="inline-block rounded-xl bg-linear-to-r from-primary to-secondary px-6 py-4 text-base font-bold text-on-primary-fixed transition-all hover:shadow-[0_0_30px_rgba(160,255,195,0.2)] active:scale-95 sm:px-10 sm:text-lg"
                 >
                 Start a Conversation
                 </a>
 
                 <a
                 href="#projects"
-                className="inline-block rounded-xl border border-outline-variant/30 bg-surface-container-high px-10 py-4 text-lg font-bold transition-all hover:border-primary/50 active:scale-95"
+                className="inline-block rounded-xl border border-outline-variant/30 bg-surface-container-high px-6 py-4 text-base font-bold transition-all hover:border-primary/50 active:scale-95 sm:px-10 sm:text-lg"
                 >
                 View Portfolio
                 </a>

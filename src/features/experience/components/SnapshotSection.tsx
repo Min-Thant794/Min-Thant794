@@ -1,8 +1,8 @@
 const SnapshotSection = () => {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-20">
+    <section className="mx-auto max-w-7xl px-5 py-16 sm:px-6 md:py-20 lg:px-8">
       <div className="grid gap-6 md:grid-cols-3">
-        <div className="flex flex-col justify-between rounded-3xl border border-outline-variant/10 bg-surface-container p-8 md:col-span-2">
+        <div className="flex flex-col justify-between rounded-3xl border border-outline-variant/10 bg-surface-container p-5 sm:p-8 md:col-span-2">
           <div>
             <h4 className="mb-4 font-headline text-2xl font-bold">
               Thesis: Cloud Computing Optimization
@@ -14,7 +14,7 @@ const SnapshotSection = () => {
             </p>
           </div>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <span className="flex items-center gap-2 font-label text-sm text-primary">
               <span className="material-symbols-outlined">description</span>
               Read Abstract
@@ -22,7 +22,7 @@ const SnapshotSection = () => {
           </div>
         </div>
 
-        <div className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-primary p-8 transition-colors hover:bg-primary/90">
+        <div className="group flex cursor-pointer flex-col justify-between rounded-3xl bg-primary p-5 transition-colors hover:bg-primary/90 sm:p-8">
           <span className="material-symbols-outlined text-4xl text-on-primary-fixed">
             terminal
           </span>

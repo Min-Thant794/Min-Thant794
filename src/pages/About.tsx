@@ -7,10 +7,10 @@ import CTASection from "../features/about/sections/CTASection"
 
 const About = () => {
   return (
-    <div className="pt-30 px-35">
+    <div className="mx-auto max-w-7xl px-5 pt-24 sm:px-6 md:pt-28 lg:px-8">
       <HeroSection/>
       
-      <section className="space-y-32">
+      <section className="space-y-20 md:space-y-28 lg:space-y-32">
         <AcademicSection />
         <PhilosophySection />
         <GrowthSection />

@@ -16,7 +16,6 @@ const NavBar = () => {
     { path: "/contact", name: "Contact" },
   ];
 
-  // Close on Escape key
   useEffect(() => {
     if (!isMobileMenuOpen) return;
     const onKeyDown = (e: KeyboardEvent) => {
@@ -26,7 +25,6 @@ const NavBar = () => {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [isMobileMenuOpen]);
 
-  // Lock body scroll
   useEffect(() => {
     if (!isMobileMenuOpen) return;
     const prev = document.body.style.overflow;
@@ -59,24 +57,23 @@ const NavBar = () => {
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-[#0c0e12]/60 backdrop-blur-xl transition-all duration-300">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
         {/* Logo */}
         <NavLink
           to="/"
-          className="font-headline text-xl font-bold tracking-tighter text-primary"
+          className="font-headline text-lg font-bold text-primary sm:text-xl"
           onClick={() => setIsMobileMenuOpen(false)}
         >
           MIN THANT TUN
         </NavLink>
 
-        {/* Desktop nav */}
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <NavLink
               to={link.path}
               key={link.path}
               className={({ isActive }) =>
-                `${isActive ? "text-primary" : ""} font-headline cursor-pointer tracking-tight text-on-surface-variant transition-colors duration-300 hover:text-primary`
+                `${isActive ? "text-primary" : ""} font-headline cursor-pointer text-on-surface-variant transition-colors duration-300 hover:text-primary`
               }
             >
               {link.name}
@@ -90,7 +87,6 @@ const NavBar = () => {
           </NavLink>
         </div>
 
-        {/* Hamburger button */}
         <button
         ref={hamburgerRef}
         type="button"
@@ -110,7 +106,6 @@ const NavBar = () => {
 
       {/* Mobile menu */}
       <div className="md:hidden">
-        {/* Backdrop */}
         <div
           aria-hidden="true"
           onClick={() => setIsMobileMenuOpen(false)}
@@ -119,12 +114,11 @@ const NavBar = () => {
           }`}
         />
 
-        {/* Drawer panel */}
         <div
           id={mobileMenuId}
           ref={menuRef}
           className={[
-            "fixed inset-x-4 top-24 z-9999 origin-top rounded-2xl",
+            "fixed inset-x-3 top-24 z-9999 origin-top rounded-2xl sm:inset-x-4",
             "border border-white/8 bg-[#0d0f14]/98 shadow-2xl backdrop-blur-2xl",
             "transition-all duration-300 ease-out",
             isMobileMenuOpen
@@ -149,18 +143,18 @@ const NavBar = () => {
                   }}
                   className={({ isActive }) =>
                     [
-                      "group relative flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium tracking-tight",
+                      "group relative flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium",
                       "transition-colors duration-200",
                       isActive
                         ? "bg-primary/10 text-primary"
                         : "text-on-surface-variant hover:bg-white/4 hover:text-white",
                     ].join(" ")
                   }
-                >
+                  >
                   {({ isActive }) => (
                     <>
                       <span className={`absolute left-0 top-1/2 h-5 w-0.75 -translate-y-1/2 rounded-full bg-primary transition-all duration-300 ${isActive ? "opacity-100 scale-y-100" : "opacity-0 scale-y-50"}`} />
-                      <span className="font-headline tracking-tight">{link.name}</span>
+                      <span className="font-headline">{link.name}</span>
                       <span className={`ml-auto text-xs text-primary/50 transition-all duration-200 ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-60"}`}>›</span>
                     </>
                   )}

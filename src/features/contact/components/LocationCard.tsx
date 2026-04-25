@@ -11,7 +11,7 @@ const LocationCard = () => {
 
             <div className="absolute inset-0 bg-linear-to-t from-surface-container-low via-transparent to-transparent" />
 
-            <div className="relative flex h-full flex-col justify-end p-8">
+            <div className="relative flex h-full flex-col justify-end p-5 sm:p-8">
                 <div className="mb-2 flex items-center gap-2">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
                 <span className="font-headline text-xs uppercase tracking-widest text-primary">
@@ -19,7 +19,7 @@ const LocationCard = () => {
                 </span>
                 </div>
 
-                <h3 className="mb-1 font-headline text-2xl font-bold">
+                <h3 className="mb-1 font-headline text-xl font-bold sm:text-2xl">
                 Currently located in
                 </h3>
                 <p className="text-on-surface-variant">Singapore</p>

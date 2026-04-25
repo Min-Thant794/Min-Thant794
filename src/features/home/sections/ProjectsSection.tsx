@@ -11,10 +11,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="bg-surface-container-low py-20 md:py-28 lg:py-32">
-      <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="mb-12 flex flex-col justify-between gap-6 md:mb-16 md:flex-row md:items-end">
           <div>
-            <h2 className="mb-4 font-headline text-4xl font-bold md:text-5xl">
+            <h2 className="mb-4 font-headline text-3xl font-bold sm:text-4xl md:text-5xl">
               Selected Works
             </h2>
             <p className="text-on-surface-variant">
@@ -50,11 +50,11 @@ const ProjectsSection = () => {
                 </span>
               </div>
 
-              <h3 className="mb-4 font-headline text-2xl font-bold text-on-background sm:text-3xl lg:text-4xl">
+              <h3 className="mb-4 font-headline text-2xl font-bold leading-tight text-on-background sm:text-3xl lg:text-4xl">
                 Integrated Rental Booking System (IRBS)
               </h3>
 
-              <p className="mb-6 max-w-xl text-on-surface-variant">
+              <p className="mb-6 max-w-xl text-sm text-on-surface-variant sm:text-base">
                 A comprehensive full-stack platform developed as an academic project, featuring real-time availability tracking and automated booking management.
               </p>
 
@@ -101,11 +101,11 @@ const ProjectsSection = () => {
                 </span>
               </div>
 
-              <h3 className="mb-4 font-headline text-2xl font-bold text-on-background sm:text-3xl lg:text-4xl">
+              <h3 className="mb-4 font-headline text-2xl font-bold leading-tight text-on-background sm:text-3xl lg:text-4xl">
                 Shopping PWA
               </h3>
 
-              <p className="mb-6 text-on-surface-variant">
+              <p className="mb-6 text-sm text-on-surface-variant sm:text-base">
                 A Progressive Web App developed with mentor guidance, delivering fast, installable, and offline-capable shopping experiences.
               </p>
 

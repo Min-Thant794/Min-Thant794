@@ -12,11 +12,11 @@ const TimelineItem = ({ item }: TimelineItemProps) => {
       : "bg-primary shadow-[0_0_15px_rgba(160,255,195,0.5)]";
 
   return (
-    <section className="relative mb-32">
-      <div className="flex flex-col items-center md:flex-row">
+    <section className="relative mb-20 md:mb-32">
+      <div className="flex flex-col items-start md:flex-row md:items-center">
         {isLeft ? (
           <>
-            <div className="order-2 mb-8 md:order-1 md:mb-0 md:w-1/2 md:pr-16 md:text-right">
+            <div className="order-2 mb-8 w-full md:order-1 md:mb-0 md:w-1/2 md:pr-16 md:text-right">
               <span
                 className={`mb-2 block font-label text-xs uppercase tracking-widest ${
                   item.dotColor === "tertiary" ? "text-tertiary" : "text-primary"
@@ -25,7 +25,7 @@ const TimelineItem = ({ item }: TimelineItemProps) => {
                 {item.label}
               </span>
 
-              <h3 className="mb-4 font-headline text-3xl font-bold text-on-surface">
+              <h3 className="mb-4 font-headline text-2xl font-bold text-on-surface sm:text-3xl">
                 {item.title}
               </h3>
 
@@ -51,16 +51,16 @@ const TimelineItem = ({ item }: TimelineItemProps) => {
               className={`absolute left-0 z-10 hidden h-4 w-4 -translate-x-1/2 rounded-full border-4 border-background md:left-1/2 md:block md:transform ${dotClass}`}
             />
 
-            <div className="order-1 mb-4 md:order-2 md:mb-0 md:w-1/2 md:pl-16">
-              <div className="font-headline text-5xl font-bold tracking-tighter text-outline-variant/20">
+            <div className="order-1 mb-4 w-full md:order-2 md:mb-0 md:w-1/2 md:pl-16">
+              <div className="font-headline text-4xl font-bold text-outline-variant/20 sm:text-5xl">
                 {item.year}
               </div>
             </div>
           </>
         ) : (
           <>
-            <div className="mb-4 md:mb-0 md:w-1/2 md:pr-16 md:text-right">
-              <div className="font-headline text-5xl font-bold tracking-tighter text-outline-variant/20">
+            <div className="mb-4 w-full md:mb-0 md:w-1/2 md:pr-16 md:text-right">
+              <div className="font-headline text-4xl font-bold text-outline-variant/20 sm:text-5xl">
                 {item.year}
               </div>
             </div>
@@ -69,7 +69,7 @@ const TimelineItem = ({ item }: TimelineItemProps) => {
               className={`absolute left-0 z-10 hidden h-4 w-4 -translate-x-1/2 rounded-full border-4 border-background md:left-1/2 md:block md:transform ${dotClass}`}
             />
 
-            <div className="md:w-1/2 md:pl-16">
+            <div className="w-full md:w-1/2 md:pl-16">
               <span
                 className={`mb-2 block font-label text-xs uppercase tracking-widest ${
                   item.dotColor === "tertiary" ? "text-primary" : "text-tertiary"
@@ -78,7 +78,7 @@ const TimelineItem = ({ item }: TimelineItemProps) => {
                 {item.label}
               </span>
 
-              <h3 className="mb-4 font-headline text-3xl font-bold text-on-surface">
+              <h3 className="mb-4 font-headline text-2xl font-bold text-on-surface sm:text-3xl">
                 {item.title}
               </h3>
 

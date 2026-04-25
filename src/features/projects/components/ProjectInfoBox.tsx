@@ -6,7 +6,7 @@ type ProjectInfoBoxProps = {
 
 const ProjectInfoBox = ({ item }: ProjectInfoBoxProps) => {
   return (
-    <div className="rounded-xl border border-outline-variant/15 bg-surface-container-low p-6">
+    <div className="rounded-xl border border-outline-variant/15 bg-surface-container-low p-5 sm:p-6">
       <h3
         className={`mb-2 font-label text-sm uppercase ${
           item.accent === "tertiary" ? "text-tertiary" : "text-primary"

@@ -2,20 +2,20 @@ const techList = ["REST APIs", "Auth (JWT)", "MongoDB", "Postman"];
 
 const BackendApiCard = () => {
     return (
-        <section className="md:col-span-6 bg-surface-container-low rounded-xl p-8 border border-outline-variant/10">
-            <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+        <section className="rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 sm:p-8 md:col-span-6">
+            <div className="mb-8 flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
                     <span className="material-symbols-outlined">
                         database
                     </span>
                 </div>
-                <h2 className="font-headline text-2xl font-bold">
+                <h2 className="font-headline text-xl font-bold sm:text-2xl">
                     Backend &amp; API
                 </h2>
             </div>
 
             <div className="grid grid-cols-1 gap-6">
-                <div className="flex items-start gap-6 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/5">
+                <div className="flex flex-col items-start gap-6 rounded-xl border border-outline-variant/5 bg-surface-container-lowest p-5 sm:flex-row sm:p-6">
                     <div className="grow">
                         <h3 className="font-headline font-bold text-lg mb-1">
                             Node.js + Express
@@ -25,7 +25,7 @@ const BackendApiCard = () => {
                         </p>
                     </div>
 
-                    <div className="w-16 h-16 rounded-full border-4 border-surface-container-highest relative flex items-center justify-center">
+                    <div className="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-4 border-surface-container-highest">
                         <svg className="w-full h-full -rotate-90 absolute">
                             <circle
                             className="text-secondary-container/20"

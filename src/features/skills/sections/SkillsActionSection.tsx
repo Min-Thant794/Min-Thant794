@@ -1,6 +1,6 @@
 const SkillsActionSection = () => {
     return (
-        <section className="mt-24 bg-surface-container-low rounded-3xl p-12 text-center relative overflow-hidden">
+        <section className="relative mt-16 overflow-hidden rounded-3xl bg-surface-container-low p-5 text-center sm:p-8 md:mt-24 lg:p-12">
             <div className="absolute -right-24 -bottom-24 w-80 h-80 bg-tertiary/10 blur-[80px] rounded-full"/>
 
             <h2 className="text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed">
@@ -10,12 +10,12 @@ const SkillsActionSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                 href="#projects"
-                className="inline-block text-center bg-linear-to-br from-primary to-tertiary text-on-primary-fixed px-8 py-4 rounded-xl font-headline font-bold active:scale-85 transition-transform"
+                className="inline-block w-full rounded-xl bg-linear-to-br from-primary to-tertiary px-6 py-4 text-center font-headline font-bold text-on-primary-fixed transition-transform active:scale-85 sm:w-auto sm:px-8"
                 >
                     View Projects
                 </a>
 
-                <button className="bg-surface-container-high border border-outline-variant/30 text-on-surface px-8 py-4 rounded-xl font-headline font-bold hover:bg-surface-container-highest transition-colors">
+                <button className="w-full rounded-xl border border-outline-variant/30 bg-surface-container-high px-6 py-4 font-headline font-bold text-on-surface transition-colors hover:bg-surface-container-highest sm:w-auto sm:px-8">
                     Download Technical PDF
                 </button>
             </div>

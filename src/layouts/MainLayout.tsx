@@ -4,9 +4,9 @@ import Footer from "../components/ui/Footer";
 
 const MainLayout = () => {
     return (
-        <div className="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+        <div className="min-w-0 overflow-x-hidden bg-background text-on-background selection:bg-primary selection:text-on-primary">
             <NavBar/>
-            <main>
+            <main className="min-w-0 overflow-x-hidden">
                 <Outlet/>
             </main>
             <Footer/>

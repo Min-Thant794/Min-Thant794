@@ -7,7 +7,7 @@ const ResumeSkillsSection = () => {
                 <span className="material-symbols-outlined text-3xl text-primary">
                 terminal
                 </span>
-                <h3 className="font-headline text-2xl font-bold uppercase tracking-tight">
+                <h3 className="font-headline text-xl font-bold uppercase sm:text-2xl">
                 Technical Skills
                 </h3>
             </div>

@@ -2,7 +2,7 @@ import { statusItems } from "../data";
 
 const StatusGrid = () => {
     return (
-        <section>
+        <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {statusItems.map((item) => (
                 <div
                     key={item.title}

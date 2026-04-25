@@ -7,7 +7,7 @@ const ResumeLanguagesSection = () => {
                 <span className="material-symbols-outlined text-xl text-primary">
                 translate
                 </span>
-                <h3 className="font-headline text-lg font-bold uppercase tracking-tight">
+                <h3 className="font-headline text-lg font-bold uppercase">
                 Languages
                 </h3>
             </div>
@@ -16,7 +16,7 @@ const ResumeLanguagesSection = () => {
                 {resumeLanguages.map((language) => (
                 <div
                     key={language.name}
-                    className="flex justify-between text-sm text-on-surface"
+                    className="flex flex-wrap justify-between gap-2 text-sm text-on-surface"
                 >
                     <span>{language.name}</span>
                     <span className="text-on-surface-variant">{language.level}</span>

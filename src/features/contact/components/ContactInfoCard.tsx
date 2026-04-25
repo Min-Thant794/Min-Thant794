@@ -2,7 +2,7 @@ import { contactChannels } from "../data";
 
 const ContactInfoCard = () => {
     return (
-        <section className="rounded-xl bg-surface-container p-8 outline outline-outline-variant/15">
+        <section className="rounded-xl bg-surface-container p-5 outline outline-outline-variant/15 sm:p-8">
             <h3 className="mb-8 font-headline text-xl font-bold text-primary">
                 Direct Channels
             </h3>
@@ -27,19 +27,19 @@ const ContactInfoCard = () => {
                     <a
                     key={channel.label}
                     href={channel.href}
-                    className="group flex items-center gap-6"
+                    className="group flex items-center gap-4 sm:gap-6"
                     >
                     <div
-                        className={`flex h-12 w-12 items-center justify-center rounded-full bg-surface-container-highest transition-all duration-300 ${accentClass}`}
+                        className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-surface-container-highest transition-all duration-300 ${accentClass}`}
                     >
                         <span className="material-symbols-outlined">{channel.icon}</span>
                     </div>
 
-                    <div>
+                    <div className="min-w-0">
                         <p className="font-headline text-xs uppercase tracking-widest text-on-surface-variant">
                         {channel.label}
                         </p>
-                        <p className={`text-on-surface transition-colors ${textHoverClass}`}>
+                        <p className={`break-words text-on-surface transition-colors ${textHoverClass}`}>
                         {channel.value}
                         </p>
                     </div>

@@ -8,7 +8,7 @@ const ResumeProjectsSection = () => {
                 <span className="material-symbols-outlined text-3xl text-primary">
                 rocket_launch
                 </span>
-                <h3 className="font-headline text-2xl font-bold uppercase tracking-tight">
+                <h3 className="font-headline text-xl font-bold uppercase sm:text-2xl">
                 Selected Projects
                 </h3>
             </div>
@@ -17,7 +17,7 @@ const ResumeProjectsSection = () => {
                 {resumeProjects.map((project) => (
                 <div
                     key={project.title}
-                    className="rounded-xl border border-outline-variant/10 bg-surface-container p-6"
+                    className="rounded-xl border border-outline-variant/10 bg-surface-container p-5 sm:p-6"
                 >
                     <h4 className="mb-2 text-lg font-bold text-primary">
                     {project.title}

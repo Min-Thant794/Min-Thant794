@@ -4,7 +4,7 @@ export const contactChannels: ContactChannel[] = [
     {
         label: "Email",
         value: "minthanthtun29@gmail.com",
-        href: "minthanthtun29@gmail.com",
+        href: "mailto:minthanthtun29@gmail.com",
         icon: "mail",
         accent: "primary"
     },

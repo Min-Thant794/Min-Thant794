@@ -47,8 +47,8 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
     >
       <div className="absolute right-0 top-0 h-full w-1/3 bg-primary/5 blur-[120px]" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-8">
-        <div className="grid gap-20 lg:grid-cols-2">
+      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
             <h2 className="mb-6 font-headline text-4xl font-bold sm:text-5xl">
               Get in <span className="italic text-primary">Touch</span>
@@ -59,11 +59,11 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
             </p>
 
             <div className="space-y-6">
-              <div className="group flex items-center gap-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-outline-variant bg-surface-container-high text-primary transition-all group-hover:bg-primary group-hover:text-on-primary">
+              <div className="group flex items-center gap-4 sm:gap-6">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-outline-variant bg-surface-container-high text-primary transition-all group-hover:bg-primary group-hover:text-on-primary">
                   <span className="material-symbols-outlined">alternate_email</span>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs uppercase tracking-widest text-on-surface-variant">Email</p>
                   <p className="break-all text-base font-medium text-on-surface sm:text-lg">
                     minthanthtun29@gmail.com
@@ -71,8 +71,8 @@ const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
 
-              <div className="group flex items-center gap-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-outline-variant bg-surface-container-high text-primary transition-all group-hover:bg-primary group-hover:text-on-primary">
+              <div className="group flex items-center gap-4 sm:gap-6">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-outline-variant bg-surface-container-high text-primary transition-all group-hover:bg-primary group-hover:text-on-primary">
                   <span className="material-symbols-outlined">location_on</span>
                 </div>
                 <div>

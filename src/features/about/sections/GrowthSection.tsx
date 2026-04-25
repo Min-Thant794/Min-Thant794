@@ -7,7 +7,7 @@ const tags = [
 const GrowthSection = () => {
     return (
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            <div className="glass-panel flex flex-col justify-between rounded-xl p-10 md:col-span-2">
+            <div className="glass-panel flex flex-col justify-between rounded-xl p-5 sm:p-8 md:col-span-2 lg:p-10">
                 <div>
                 <h3 className="mb-4 font-headline text-2xl font-bold">
                     Bridging the Gap
@@ -34,7 +34,7 @@ const GrowthSection = () => {
                 </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-xl bg-surface-container p-10">
+            <div className="group relative overflow-hidden rounded-xl bg-surface-container p-5 sm:p-8 lg:p-10">
                 <div className="absolute inset-0 bg-primary opacity-0 transition-opacity duration-500 group-hover:opacity-5" />
 
                 <span

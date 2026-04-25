@@ -3,25 +3,25 @@ import TechBadge from "../../../components/ui/TechBadge";
 
 const FrontendArchitecctureCard = () => {
   return (
-    <section className="md:col-span-8 bg-surface-container-low rounded-xl p-8 border border-outline-variant/10 relative overflow-hidden group">
+    <section className="group relative overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 sm:p-8 md:col-span-8">
         <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-10 transition-opacity">
             <span className="material-symbols-outlined text-9xl">
                 terminal
             </span>
         </div>
 
-        <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+        <div className="mb-8 flex items-center gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                 <span className="material-symbols-outlined">
                     web
                 </span>
             </div>
-            <h2 className="font-headline text-2xl font-bold">
+            <h2 className="font-headline text-xl font-bold sm:text-2xl">
                 Frontend Architecture
             </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div className="space-y-6">
                 <SkillProgressBar
                 title="React Ecosystem"
@@ -35,7 +35,7 @@ const FrontendArchitecctureCard = () => {
                 />
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <TechBadge
                     title="HTML5"
                     description="Semantic structure and accessibility."

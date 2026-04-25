@@ -1,10 +1,10 @@
 const AcademicSection = () => {
     return (
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <div className="relative">
                 <div className="absolute -top-12 -left-12 h-64 w-64 rounded-full bg-primary/5 blur-[100px]" />
 
-                <div className="relative rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-8">
+                <div className="relative rounded-xl border border-outline-variant/10 bg-surface-container-lowest p-5 sm:p-8">
                 <div className="mb-6 flex gap-2">
                     <div className="h-2.5 w-2.5 rounded-full bg-outline-variant/40" />
                     <div className="h-2.5 w-2.5 rounded-full bg-outline-variant/40" />
@@ -15,7 +15,7 @@ const AcademicSection = () => {
                     // Coventry University
                 </p>
 
-                <p className="mb-4 font-headline text-2xl font-bold">
+                <p className="mb-4 font-headline text-xl font-bold sm:text-2xl">
                     Academic Excellence
                 </p>
 
@@ -33,11 +33,11 @@ const AcademicSection = () => {
             </div>
 
             <div className="space-y-6">
-                <h2 className="border-l-4 border-primary pl-6 font-headline text-3xl font-bold">
+                <h2 className="border-l-4 border-primary pl-4 font-headline text-2xl font-bold sm:pl-6 sm:text-3xl">
                 The Academic Catalyst
                 </h2>
 
-                <p className="text-lg leading-relaxed text-on-surface-variant">
+                <p className="text-base leading-relaxed text-on-surface-variant sm:text-lg">
                 My time at Coventry University served as more than just a formal
                 education; it was a period of intense curiosity and rigorous testing.
                 Immersed in an environment that championed both theoretical computer
@@ -45,7 +45,7 @@ const AcademicSection = () => {
                 intersection of data structures and user-centric design.
                 </p>
 
-                <p className="text-lg leading-relaxed text-on-surface-variant">
+                <p className="text-base leading-relaxed text-on-surface-variant sm:text-lg">
                 Transitioning from simple classroom assignments to complex,
                 architecture-heavy projects, I realized that my passion wasn&apos;t
                 just in making things work—it was in making them work optimally for

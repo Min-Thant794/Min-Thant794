@@ -1,7 +1,7 @@
 const ExperienceSection = () => {
   return (
     <div id="experience" className="scroll-mt-24">
-      <h2 className="mb-12 flex items-center gap-4 font-headline text-4xl font-bold">
+      <h2 className="mb-10 flex items-start gap-3 font-headline text-3xl font-bold leading-tight sm:items-center sm:gap-4 sm:text-4xl md:mb-12">
         <span className="material-symbols-outlined text-primary">work</span>
         Experience & Involvement
       </h2>

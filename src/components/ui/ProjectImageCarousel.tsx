@@ -3,12 +3,15 @@ import { useEffect, useState } from "react";
 type Props = {
   images: string[];
   alt: string;
+  className?: string;
 };
 
-const ProjectImageCarousel = ({ images, alt }: Props) => {
+const ProjectImageCarousel = ({ images, alt, className }: Props) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
+    if (images.length === 0) return;
+
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
     }, 5000);
@@ -16,8 +19,10 @@ const ProjectImageCarousel = ({ images, alt }: Props) => {
     return () => clearInterval(interval);
   }, [images.length]);
 
+  if (images.length === 0) return null;
+
   return (
-    <div className="relative h-125 w-full overflow-hidden">
+    <div className={`relative w-full overflow-hidden ${className ?? "h-72 sm:h-96 lg:h-125"}`}>
       {images.map((img, i) => (
         <img
           key={i}

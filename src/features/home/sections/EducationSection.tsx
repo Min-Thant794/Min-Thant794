@@ -1,7 +1,7 @@
 const EducationSection = () => {
   return (
     <div id="education" className="scroll-mt-24">
-      <h2 className="mb-12 flex items-center gap-4 font-headline text-4xl font-bold">
+      <h2 className="mb-10 flex items-center gap-4 font-headline text-3xl font-bold sm:text-4xl md:mb-12">
         <span className="material-symbols-outlined text-tertiary">school</span>
         Education
       </h2>
@@ -14,7 +14,7 @@ const EducationSection = () => {
             </div>
             <p className="text-on-surface-variant">Coventry University</p>
           </div>
-          <div className="flex flex-row justify-between gap-3 whitespace-nowrap sm:flex-col sm:items-end">
+          <div className="flex flex-wrap justify-between gap-3 sm:flex-col sm:items-end">
             <div className="text-sm text-tertiary">COMPLETED</div>
             <div className="text-sm tracking-wide">2024-2026</div>
           </div>
@@ -27,7 +27,7 @@ const EducationSection = () => {
             </div>
             <p className="text-on-surface-variant">NCC Education</p>
           </div>
-          <div className="flex flex-row justify-between gap-3 whitespace-nowrap sm:flex-col sm:items-end">
+          <div className="flex flex-wrap justify-between gap-3 sm:flex-col sm:items-end">
               <div className="text-sm text-tertiary">COMPLETED</div>
               <div className="text-sm tracking-wide">2023-2024</div>
             </div>
@@ -40,7 +40,7 @@ const EducationSection = () => {
             </div>
             <p className="text-on-surface-variant">JLPT N4 Certificate</p>
           </div>
-          <div className="flex flex-row justify-between gap-3 whitespace-nowrap sm:flex-col sm:items-end">
+          <div className="flex flex-wrap justify-between gap-3 sm:flex-col sm:items-end">
               <div className="text-sm text-tertiary">CERTIFIED</div>
               <div className="text-sm tracking-wide">2022</div>
             </div>

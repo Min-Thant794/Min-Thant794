@@ -10,8 +10,8 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project, reverse = false }: ProjectCardProps) => {
   return (
-    <section className="mb-40">
-      <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
+    <section className="mb-24 md:mb-32 lg:mb-40">
+      <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12 lg:gap-12">
         <div
           className={
             reverse
@@ -64,6 +64,7 @@ const ProjectPreview = ({ project }: ProjectPreviewProps) => {
           <ProjectImageCarousel
             images={images}
             alt={project.imageAlt || project.title}
+            className="h-full"
           />
         )}
 
@@ -96,13 +97,13 @@ const ProjectLinks = ({ liveDemoUrl, githubUrl }: ProjectLinksProps) => {
   if (!liveDemoUrl && !githubUrl) return null;
 
   return (
-    <div className="absolute bottom-6 left-6 z-20 flex gap-4">
+    <div className="absolute bottom-4 left-4 right-4 z-20 flex flex-wrap gap-3 sm:bottom-6 sm:left-6 sm:right-auto sm:gap-4">
       {liveDemoUrl && (
         <a
           href={liveDemoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 rounded-lg border border-outline-variant/15 bg-surface-container-high/90 px-4 py-2 text-primary backdrop-blur transition-all hover:bg-primary hover:text-on-primary"
+          className="flex items-center gap-2 rounded-lg border border-outline-variant/15 bg-surface-container-high/90 px-3 py-2 text-primary backdrop-blur transition-all hover:bg-primary hover:text-on-primary sm:px-4"
         >
           <span className="material-symbols-outlined text-sm">
             rocket_launch
@@ -116,7 +117,7 @@ const ProjectLinks = ({ liveDemoUrl, githubUrl }: ProjectLinksProps) => {
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 rounded-lg border border-outline-variant/15 bg-surface-container-high/90 px-4 py-2 text-on-surface backdrop-blur transition-all hover:bg-surface-variant"
+          className="flex items-center gap-2 rounded-lg border border-outline-variant/15 bg-surface-container-high/90 px-3 py-2 text-on-surface backdrop-blur transition-all hover:bg-surface-variant sm:px-4"
         >
           <span className="material-symbols-outlined text-sm">code</span>
           <span className="font-label text-sm font-bold">GitHub</span>
@@ -139,7 +140,7 @@ const ProjectContent = ({
     <div className="flex flex-col justify-center">
       {project.isWip && <ProjectStatusBadge label="Work in Progress" />}
 
-      <h2 className="mb-6 font-headline text-4xl font-bold text-on-surface">
+      <h2 className="mb-6 font-headline text-3xl font-bold leading-tight text-on-surface sm:text-4xl">
         {project.title}
       </h2>
 

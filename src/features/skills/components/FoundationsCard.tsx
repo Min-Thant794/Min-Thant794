@@ -28,14 +28,14 @@ const FoundationItems: FoundationItem[] = [
 
 const FoundationsCard = () => {
     return (
-        <section className="md:col-span-4 bg-surface-container-low rounded-xl p-8 border border-outline-variant/10 flex flex-col">
-            <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+        <section className="flex flex-col rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 sm:p-8 md:col-span-4">
+            <div className="mb-8 flex items-center gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-tertiary/10 text-tertiary">
                     <span className="material-symbols-outlined">
                         code
                     </span>
                 </div>
-                <h2 className="font-headline text-2xl font-bold">
+                <h2 className="font-headline text-xl font-bold sm:text-2xl">
                     Foundations
                 </h2>
             </div>
@@ -45,9 +45,9 @@ const FoundationsCard = () => {
                     FoundationItems.map((item) => (
                         <div
                         key={item.title}
-                        className="p-5 bg-surface-container-highest/30 rounded-xl hover:bg-surface-container-highest transition-colors group"
+                        className="group rounded-xl bg-surface-container-highest/30 p-5 transition-colors hover:bg-surface-container-highest"
                         >
-                            <div className="flex justify-between items-start mb-2">
+                            <div className="mb-2 flex flex-wrap items-start justify-between gap-2">
                                 <span className="font-headline font-bold group-hover:text-primary">
                                     {item.title}
                                 </span>

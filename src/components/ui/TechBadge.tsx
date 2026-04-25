@@ -9,7 +9,7 @@ type TechBadgeProps = {
 const TechBadge = ({title, description, dashed = false, centered = false, icon} : TechBadgeProps) => {
     return (
         <div 
-        className={`p-4 bg-surface-container rounded-xl 
+        className={`rounded-xl bg-surface-container p-3 sm:p-4 
         ${dashed ? "border-dashed border-outline-variant flex items-center justify-center" 
         : "border border-outline-variant/5"}`}
         >

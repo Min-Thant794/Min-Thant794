@@ -1,9 +1,9 @@
 const SkillsSection = () => {
   return (
     <section id="skills" className="scroll-mt-24 py-20 md:py-28 lg:py-32">
-      <div className="mx-auto max-w-7xl px-8">
-        <div className="mb-20">
-          <h2 className="mb-4 font-headline text-4xl font-bold md:text-5xl">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="mb-12 md:mb-20">
+          <h2 className="mb-4 font-headline text-3xl font-bold sm:text-4xl md:text-5xl">
             Technical Toolkit
           </h2>
           <p className="max-w-2xl text-on-surface-variant">
@@ -12,7 +12,7 @@ const SkillsSection = () => {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          <div className="ghost-border group rounded-2xl bg-surface-container p-8 transition-all hover:bg-surface-container-high hover:-translate-y-1 duration-500">
+          <div className="ghost-border group rounded-2xl bg-surface-container p-6 transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high sm:p-8">
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
               <span className="material-symbols-outlined">responsive_layout</span>
             </div>
@@ -26,7 +26,7 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          <div className="ghost-border group rounded-2xl bg-surface-container p-8 transition-all hover:bg-surface-container-high hover:-translate-y-1 duration-500">
+          <div className="ghost-border group rounded-2xl bg-surface-container p-6 transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high sm:p-8">
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-tertiary/10 text-tertiary transition-transform group-hover:scale-110">
               <span className="material-symbols-outlined">database</span>
             </div>
@@ -40,7 +40,7 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          <div className="ghost-border group rounded-2xl bg-surface-container p-8 transition-all hover:bg-surface-container-high hover:-translate-y-1 duration-500">
+          <div className="ghost-border group rounded-2xl bg-surface-container p-6 transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high sm:p-8">
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/10 text-secondary transition-transform group-hover:scale-110">
               <span className="material-symbols-outlined">terminal</span>
             </div>
@@ -54,7 +54,7 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          <div className="ghost-border group rounded-2xl bg-surface-container p-8 transition-all hover:bg-surface-container-high hover:-translate-y-1 duration-500">
+          <div className="ghost-border group rounded-2xl bg-surface-container p-6 transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high sm:p-8">
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-on-surface-variant/10 text-on-surface-variant transition-transform group-hover:scale-110">
               <span className="material-symbols-outlined">build</span>
             </div>
@@ -68,7 +68,7 @@ const SkillsSection = () => {
             </div>
           </div>
 
-          <div className="ghost-border group rounded-2xl bg-surface-container p-8 transition-all hover:bg-surface-container-high hover:-translate-y-1 duration-500">
+          <div className="ghost-border group rounded-2xl bg-surface-container p-6 transition-all duration-500 hover:-translate-y-1 hover:bg-surface-container-high sm:p-8">
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-tertiary/10 text-tertiary transition-transform group-hover:scale-110">
               <span className="material-symbols-outlined">settings</span>
             </div>

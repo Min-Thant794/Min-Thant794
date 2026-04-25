@@ -1,16 +1,16 @@
 const Footer = () => {
   return (
     <footer className="w-full bg-[#0c0e12] py-12">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 border-t-2 border-outline-variant/45 px-8 pt-12 md:flex-row">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 border-t-2 border-outline-variant/45 px-5 pt-10 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
         <div className="font-headline text-lg font-bold text-primary">
           MIN THANT TUN
         </div>
 
-        <p className="font-headline text-sm uppercase tracking-widest text-on-surface-variant">
+        <p className="font-headline text-xs uppercase tracking-widest text-on-surface-variant sm:text-sm">
           © 2026 Min Thant Tun | All Rights Reserved
         </p>
 
-        <div className="flex gap-8">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 md:justify-end">
           <a 
           href="https://github.com/Min-Thant794"
           target="_blank"

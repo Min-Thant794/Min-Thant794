@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div className="bg-background text-on-surface font-body technical-grid min-h-screen">
 
-      <main className="pt-32 pb-16 px-8 max-w-7xl mx-auto overflow-hidden">
+      <main className="mx-auto max-w-7xl overflow-hidden px-5 pb-16 pt-28 sm:px-6 md:pt-32 lg:px-8">
         <HeroHeader />
         <SkillsGrid />
         <SkillsActionSection />

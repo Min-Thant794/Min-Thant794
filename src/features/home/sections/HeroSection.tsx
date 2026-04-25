@@ -17,7 +17,7 @@ const HeroSection = ({ contactRef }: HeroSectionProps) => {
             Available for Opportunities
           </div>
 
-          <h1 className="font-headline text-4xl font-bold leading-tight tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          <h1 className="font-headline text-4xl font-bold leading-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
             Hi, I&apos;m <span className="text-glow text-primary">Min Thant Tun</span>
           </h1>
 
