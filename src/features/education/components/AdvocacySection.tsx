@@ -1,4 +1,3 @@
-import ProjectImageCarousel from "../../../components/ui/ProjectImageCarousel";
 import volunteerImage from "../../../assets/images/worldCleanupDayMyanmar.png"
 
 const AdvocacySection = () => {
