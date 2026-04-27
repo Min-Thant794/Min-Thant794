@@ -24,7 +24,7 @@ const HeroSection = ({ contactRef }: HeroSectionProps) => {
           <p className="max-w-xl text-base leading-relaxed text-on-surface-variant sm:text-lg md:text-xl lg:text-2xl">
             Aspiring Full-Stack Developer specialized in{" "}
             <span className="font-semibold text-on-surface">React &amp; Node.js</span>,
-            currently mastering Java SE to build robust enterprise applications.
+            currently mastering <span className="font-semibold text-on-surface">Java SE</span> to build robust enterprise applications.
           </p>
 
           <div className="flex flex-col gap-4 pt-4 sm:flex-row sm:flex-wrap">
