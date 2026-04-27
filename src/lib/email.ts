@@ -13,13 +13,13 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export const sendContactEmail = async (params: ContactFormData) => {
     if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-        throw new Error("Missing EmailJS environment variables");
+        throw new Error("Email service is not configured properly");
     }
 
     const templateParams = {
         from_name: params.name,
         reply_to: params.email,
-        subject: params.subject,
+        subject: params.subject || "No Subject",
         message: params.message
     }
 
