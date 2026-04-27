@@ -6,8 +6,8 @@ const ExperienceHero = () => {
       </p>
 
       <h1 className="mb-8 font-headline text-4xl font-bold leading-tight sm:text-5xl md:text-7xl lg:text-8xl">
-        Architecting <br />
-        <span className="text-on-surface-variant">Experiences.</span>
+        My Learning <br />
+        <span className="text-on-surface-variant">Journey.</span>
       </h1>
 
       <div className="h-1 w-32 rounded-full bg-primary" />

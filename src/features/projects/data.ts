@@ -32,14 +32,16 @@ export const projects: Project[] = [
         ],
         info: [
         {
-        heading: "The Problem",
-        description: "Manual rental booking can lead to booking conflicts, unclear car availability, and difficulty managing customers, cars, and reservations in one place.",
-        accent: "tertiary",
+            heading: "Goal",
+            description:
+                "This project was developed as my BSc (Hons) Computer Science individual project. The goal was to apply full-stack development skills by building a complete rental booking system that handles user authentication, booking workflows, and admin management in a real-world scenario.",
+            accent: "tertiary",
         },
         {
-        heading: "The Solution",
-        description: "Built a MERN-based booking system with role-based access, customer verification, car management, booking status updates, and Redis locking to reduce double-booking issues.",
-        accent: "primary",
+            heading: "The Solution",
+            description:
+                "Built a full-stack MERN application with role-based access control, customer verification, car management, and booking status workflows. Implemented Redis locking to reduce double-booking issues and improve system reliability.",
+            accent: "primary",
         },
         ],
     },
@@ -67,16 +69,16 @@ export const projects: Project[] = [
         ],
         info: [
             {
-            heading: "The Problem",
-            description:
-                "Traditional e-commerce websites often provide a poor mobile experience and lack real-time updates for features like cart synchronization and notifications.",
-            accent: "tertiary",
+                heading: "Goal",
+                description:
+                    "This project was built with guidance from my mentor to learn how full-stack React applications work in practice. The goal was to understand frontend-backend integration, authentication, and real-time features in a modern web application.",
+                accent: "tertiary",
             },
             {
-            heading: "The Solution",
-            description:
-                "Developed a full-stack shopping web application with authentication, real-time updates using Socket.io, and responsive UI design. Implemented PWA features for better performance and app-like experience on mobile devices.",
-            accent: "primary",
+                heading: "The Solution",
+                description:
+                    "Developed a full-stack shopping application with authentication, real-time updates using Socket.io, and a responsive UI. Implemented PWA features to enhance performance and provide an app-like experience on mobile devices.",
+                accent: "primary",
             },
         ],
     },
@@ -87,7 +89,7 @@ export const projects: Project[] = [
             "React.js",
             "Node.js",
             "Socket.io",
-            "MongoDB",
+            "PostgreSQL",
             "JWT Auth",
         ],
         isWip: true,
@@ -103,24 +105,24 @@ export const projects: Project[] = [
     },
     {
         title: "IoT Health Monitoring Simulator",
-        description:
-            "Coursework project that simulates an IoT-based health monitoring system using Python. It streams sensor-like health data through Microsoft Azure and visualizes real-time insights using Power BI dashboards.",
+        description: "Coursework project that simulates an IoT-based health monitoring system using Python. It streams sensor-like health data through Microsoft Azure and visualizes real-time insights using Power BI dashboards.",
         images: [p3IoTPowerBI, p3IoTPostman,p3IoTEmailAlert],
+        imageAlt:
+        "IoT Health Monitoring Simulator",
+        githubUrl: "https://github.com/Min-Thant794/my-project.git",
         techStack: [
-            "Python",
+        "Python",
             "Microsoft Azure",
             "Power BI",
             "IoT Simulation",
         ],
-        isWip: false,
-        usePlaceholder: false,
         info: [
-            {
-                heading: "Goal",
-                description:
-                    "To understand how IoT systems handle data flow from devices to cloud platforms and how real-time data can be processed and visualized for monitoring purposes.",
-                accent: "tertiary",
-            },
+        {
+            heading: "Goal",
+            description:
+                "To understand how IoT systems handle data flow from devices to cloud platforms and how real-time data can be processed and visualized for monitoring purposes.",
+            accent: "tertiary",
+        },
         ],
-    }
+    },
 ]
