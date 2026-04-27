@@ -5,6 +5,9 @@ import p1BookingPage from "../../assets/images/projects/booking.png"
 import p2HomePage from "../../assets/images/projects/shoppingPWA.png"
 import p2DealsPage from "../../assets/images/projects/deals.png"
 import p2CartPage from "../../assets/images/projects/cart.png"
+import p3IoTPowerBI from "../../assets/images/projects/iotPowerBi.png"
+import p3IoTPostman from "../../assets/images/projects/iotPostman.png"
+import p3IoTEmailAlert from "../../assets/images/projects/iotEmailAlert.png"
 
 export const projects: Project[] = [
     {
@@ -95,6 +98,28 @@ export const projects: Project[] = [
             description:
                 "To understand how real-time messaging systems work, including message delivery, socket connections, and backend scalability.",
             accent: "tertiary",
+            },
+        ],
+    },
+    {
+        title: "IoT Health Monitoring Simulator",
+        description:
+            "Coursework project that simulates an IoT-based health monitoring system using Python. It streams sensor-like health data through Microsoft Azure and visualizes real-time insights using Power BI dashboards.",
+        images: [p3IoTPowerBI, p3IoTPostman,p3IoTEmailAlert],
+        techStack: [
+            "Python",
+            "Microsoft Azure",
+            "Power BI",
+            "IoT Simulation",
+        ],
+        isWip: false,
+        usePlaceholder: false,
+        info: [
+            {
+                heading: "Goal",
+                description:
+                    "To understand how IoT systems handle data flow from devices to cloud platforms and how real-time data can be processed and visualized for monitoring purposes.",
+                accent: "tertiary",
             },
         ],
     }
