@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useId, useRef, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -79,6 +80,7 @@ const NavBar = () => {
               {link.name}
             </NavLink>
           ))}
+          <ThemeToggle/>
           <NavLink
             to="/resume"
             className="rounded-xl bg-linear-to-br cursor-pointer active:opacity-70 from-primary to-tertiary px-6 py-2 font-bold text-on-primary-fixed transition-transform active:scale-90"
