@@ -22,7 +22,7 @@ const PhilosophyCard = ({ icon, title, description }: PhilosophyCardProps) => {
 
 const PhilosophySection = () => {
     return (
-        <div className="relative overflow-hidden rounded-xl bg-surface-container-low p-5 sm:p-8 lg:p-20">
+        <div className="relative overflow-hidden rounded-xl bg-surface-container-low transition-colors duration-700 p-5 sm:p-8 lg:p-20">
             <div className="absolute top-0 right-0 h-full w-1/3 bg-linear-to-l from-primary/5 to-transparent" />
 
             <div className="relative z-10 max-w-3xl">

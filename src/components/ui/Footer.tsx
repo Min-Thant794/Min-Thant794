@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#0c0e12] pt-12 pb-1 sm:pb-5 md:pb-8 lg:pb-12">
+    <footer className="w-full bg-background transition-colors duration-700 pt-12 pb-1 sm:pb-5 md:pb-8 lg:pb-12">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 border-t-2 border-outline-variant/45 px-5 pt-10 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
         <div className="font-headline text-lg font-bold text-primary">
           MIN THANT TUN

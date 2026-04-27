@@ -39,7 +39,7 @@ const ContactInfoCard = () => {
                         <p className="font-headline text-xs uppercase tracking-widest text-on-surface-variant">
                         {channel.label}
                         </p>
-                        <p className={`break-words text-on-surface transition-colors ${textHoverClass}`}>
+                        <p className={`wrap-break-words text-on-surface transition-colors ${textHoverClass}`}>
                         {channel.value}
                         </p>
                     </div>

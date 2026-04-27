@@ -5,7 +5,7 @@ const tools = [
     {name: "GitHub", icon: "account_tree"},
     {name: "Figma", icon: "design_services"},
     {name: "Postman", icon: "sync_alt"},
-    {name: "Render", icon: "dns"},
+    {name: "Render", icon: "cloud_done"},
     {name: "Vercel", icon: "deployed_code"},
 ];
 

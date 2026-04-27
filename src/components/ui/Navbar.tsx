@@ -57,7 +57,7 @@ const NavBar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-[#0c0e12]/60 backdrop-blur-xl transition-all duration-300">
+    <nav className="fixed top-0 z-50 w-full border-b border-outline-variant/20 bg-background/70 backdrop-blur-xl transition-colors duration-700">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
         {/* Logo */}
         <NavLink
@@ -69,7 +69,8 @@ const NavBar = () => {
         </NavLink>
 
         <div className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
+          <div className="items-center gap-8 md:flex">
+            {navLinks.map((link) => (
             <NavLink
               to={link.path}
               key={link.path}
@@ -80,13 +81,15 @@ const NavBar = () => {
               {link.name}
             </NavLink>
           ))}
-          <ThemeToggle/>
           <NavLink
             to="/resume"
             className="rounded-xl bg-linear-to-br cursor-pointer active:opacity-70 from-primary to-tertiary px-6 py-2 font-bold text-on-primary-fixed transition-transform active:scale-90"
           >
             Resume
           </NavLink>
+          </div>
+
+          <ThemeToggle/>
         </div>
 
         <button

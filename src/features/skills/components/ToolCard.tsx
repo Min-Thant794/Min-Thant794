@@ -5,8 +5,8 @@ type ToolCardProps = {
 
 const ToolCard = ({name, icon} : ToolCardProps) => {
     return (
-        <div className="group flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl border border-outline-variant/5 hover:border-primary/30 transition-all">
-            <div className="w-12 h-12 mb-3 rounded-lg bg-surface-container-high flex items-center justify-center">
+        <div className="group flex flex-col items-center justify-center p-6 bg-surface-container-lowest duration-700 rounded-xl border border-outline-variant/5 hover:border-primary/30 transition-all">
+            <div className="w-12 h-12 mb-3 rounded-lg bg-surface-container-high flex items-center justify-center transition-colors duration-700">
                 <span className="material-symbols-outlined text-primary">
                     {icon}
                 </span>
