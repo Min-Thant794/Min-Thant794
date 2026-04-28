@@ -6,7 +6,7 @@ const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const mobileMenuId = useId();
   const menuRef = useRef<HTMLDivElement>(null);
-  const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const hamburgerRef = useRef<HTMLButtonElement | null>(null);
 
   const navLinks = [
     { path: "/", name: "Home" },
@@ -46,12 +46,11 @@ const NavBar = () => {
       }
     };
 
-    // Use mousedown + touchstart to catch interaction before click fires
-    document.addEventListener("mousedown", handleOutsideInteraction);
+    document.addEventListener("click", handleOutsideInteraction);
     document.addEventListener("touchstart", handleOutsideInteraction, { passive: true });
 
     return () => {
-      document.removeEventListener("mousedown", handleOutsideInteraction);
+      document.removeEventListener("click", handleOutsideInteraction);
       document.removeEventListener("touchstart", handleOutsideInteraction);
     };
   }, [isMobileMenuOpen]);
@@ -91,22 +90,22 @@ const NavBar = () => {
 
           <ThemeToggle/>
         </div>
-
-        <button
-        ref={hamburgerRef}
-        type="button"
-        className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl border border-primary/50 bg-[#1a1625] text-primary transition-all duration-200 hover:bg-[#241d35] active:scale-90 md:hidden"
-        aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-        aria-expanded={isMobileMenuOpen}
-        aria-controls={mobileMenuId}
-        onClick={() => setIsMobileMenuOpen((v) => !v)}
-      >
-        <span className="relative flex h-5 w-5 flex-col items-center justify-center gap-1.25">
-          <span className={`block h-[1.5px] w-full rounded-full bg-primary transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "translate-y-[6.5px] rotate-45" : ""}`} />
-          <span className={`block h-[1.5px] rounded-full bg-primary transition-all duration-200 ease-in-out ${isMobileMenuOpen ? "w-0 opacity-0" : "w-full opacity-100"}`} />
-          <span className={`block h-[1.5px] w-full rounded-full bg-primary transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "-translate-y-[6.5px] -rotate-45" : ""}`} />
-        </span>
-      </button>
+        <div className="flex justify-center items-center gap-5 md:hidden">
+          <ThemeToggle/>
+          <button
+            ref={hamburgerRef}
+            type="button"
+            className="relative z-9999 inline-flex h-10 w-10 items-center justify-center rounded-xl border border-primary/50 bg-background text-primary transition-all duration-200 hover:bg-[#241d35] active:scale-90"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls={mobileMenuId}
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          >
+            <span className="material-symbols-outlined pointer-events-none">
+              {isMobileMenuOpen ? "close" : "menu"}
+            </span>
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -114,7 +113,7 @@ const NavBar = () => {
         <div
           aria-hidden="true"
           onClick={() => setIsMobileMenuOpen(false)}
-          className={`fixed inset-0 z-9998 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
+          className={`fixed inset-0 z-9998 transition-opacity duration-300 ${
             isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         />
@@ -124,7 +123,7 @@ const NavBar = () => {
           ref={menuRef}
           className={[
             "fixed inset-x-3 top-24 z-9999 origin-top rounded-2xl sm:inset-x-4",
-            "border border-white/8 bg-[#0d0f14]/98 shadow-2xl backdrop-blur-2xl",
+            "border border-surface-container-low bg-background shadow-2xl backdrop-blur-2xl",
             "transition-all duration-300 ease-out",
             isMobileMenuOpen
               ? "translate-y-0 scale-100 opacity-100"
