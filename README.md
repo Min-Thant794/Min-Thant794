@@ -9,7 +9,7 @@ Computer Science graduate with a focus on full-stack development using React.js 
 - Frontend: React, JavaScript, HTML, CSS, Tailwind CSS
 - Backend: Node.js, Express.js
 - Database: MongoDB
-- Tools: Git, GitHub, Postman, Vite
+- Tools: Git, GitHub, Postman, Vite, Vercel, Render
 
 ## Projects
 
@@ -22,7 +22,7 @@ Computer Science graduate with a focus on full-stack development using React.js 
 
 ---
 
-### 🛒 Shopping Progressive Web App (Full Stack)
+### 🛒 Shopping Progressive Web App (MERN)
 - Developed a full-stack e-commerce PWA with mentor guidance  
 - Implemented JWT authentication and real-time features using Socket.io  
 - Features: product management, user accounts, order processing  
@@ -35,7 +35,7 @@ Computer Science graduate with a focus on full-stack development using React.js 
 #### 💬 Messaging App (In Progress)
 - Real-time chat application using Socket.io
 - Features: messaging, authentication, online status
-- Tech: React, Node.js, Express, MongoDB
+- Tech: React, Node.js, Express, PostgreSQL
 
 🚧 Status: In Development
 
