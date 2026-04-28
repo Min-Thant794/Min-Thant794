@@ -6,16 +6,16 @@ const ContactHero = () => {
             </span>
 
             <h1 className="mb-6 font-headline text-4xl font-bold leading-tight sm:text-5xl md:text-7xl">
-                Let&apos;s architect the <br />
+                Let&apos;s build pratical <br />
                 <span className="bg-linear-to-r from-primary to-tertiary bg-clip-text text-transparent">
-                next generation
-                </span>{" "}
-                of web.
+                real-world applications
+                </span>
             </h1>
 
             <p className="max-w-2xl text-lg leading-relaxed text-on-surface-variant">
-                Whether you have a specific project in mind or just want to chat about
-                system architecture and kinetic design, my inbox is always open.
+                I&apos;m a Computer Science graduate focused on full-stack development using React, Node.js, and modern web technologies. 
+                If you have an opportunity, collaboration, or just want to discuss projects, feel free to reach out.
+
             </p>
         </header>
     )

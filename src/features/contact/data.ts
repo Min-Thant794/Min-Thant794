@@ -26,23 +26,23 @@ export const contactChannels: ContactChannel[] = [
 
 export const statusItems: StatusItem[] = [
     {
-        title: "Response Time",
+        title: "Current Focus",
         description: 
-        "Expect a technical brief or initial response within 24 standard business hours.",
+        "Building full-stack web applications with React, Node.js, and MongoDB while improving system design skills.",
         borderColor: "border-primary",
         titleColor: "text-primary"
     },
     {
-        title: "Encryption",
+        title: "Looking For",
         description: 
-        "All communications through this portal are handled via secure, encrypted protocols.",
+        "Junior software developer or internship opportunities where I can contribute and grow.",
         borderColor: "border-tertiary",
         titleColor: "text-tertiary"
     },
     {
-        title: "Availability",
+        title: "Recent Work",
         description: 
-        "Open for select high-impact freelance engineering and architectural consultations.",
+        "Developed an Integrated Rental Booking System with authentication, booking logic, and real-time features.",
         borderColor: "border-outline-variant",
         titleColor: "text-on-surface"
     },

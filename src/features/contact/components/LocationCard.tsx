@@ -15,7 +15,7 @@ const LocationCard = () => {
                 <div className="mb-2 flex items-center gap-2">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
                 <span className="font-headline text-xs uppercase tracking-widest text-primary">
-                    Live Connection
+                    Availability
                 </span>
                 </div>
 
@@ -24,7 +24,7 @@ const LocationCard = () => {
                 </h3>
                 <p className="text-on-surface-variant">Singapore</p>
                 <p className="mt-4 font-mono text-xs text-outline">
-                UTC+08:00 • Ready for global collaboration
+                UTC+08:00 • Open to opportunities and collaboration
                 </p>
             </div>
         </section>

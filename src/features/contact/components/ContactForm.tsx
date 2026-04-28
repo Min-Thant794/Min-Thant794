@@ -99,7 +99,7 @@ const ContactForm = () => {
           value={formData.subject}
           onChange={handleChange}
           type="text"
-          placeholder="Project Inquiry"
+          placeholder="Job opportunity"
           className={inputClassName}
         />
       </div>
@@ -113,7 +113,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           rows={6}
-          placeholder="Tell me about your vision..."
+          placeholder="Write your message here..."
           className={`${inputClassName} resize-none`}
         />
       </div>
