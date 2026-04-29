@@ -24,7 +24,7 @@ const CTASection = () => {
                 to={"/projects"}
                 className="inline-block rounded-xl border border-outline-variant/30 bg-surface-container-high px-6 py-4 text-base font-bold transition-all hover:border-primary/50 active:scale-95 sm:px-10 sm:text-lg"
                 >
-                View Portfolio
+                View Porojects
                 </NavLink>
             </div>
         </section>
