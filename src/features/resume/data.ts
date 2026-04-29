@@ -21,19 +21,11 @@ export const resumeExperienceItems: ResumeExperienceItem[] = [
     company: "Personal & University Projects",
     isCurrent: true,
     points: [
-      "Designed and developed a full-stack Integrated Rental Booking System (IRBS) using React, Node.js, and MongoDB.",
-      "Implemented role-based authentication, booking workflows, and real-time availability handling using REST APIs.",
-      "Built responsive user interfaces with Tailwind CSS and improved user experience with smooth transitions and structured layouts.",
-    ],
-  },
-  {
-    title: "Web Development Trainee",
-    period: "2023",
-    company: "Light Computer Co. Ltd.",
-    points: [
-      "Completed a web development bootcamp focusing on HTML, CSS, and JavaScript fundamentals.",
-      "Developed a basic calculator mobile application as part of hands-on training.",
-      "Gained practical experience in building UI components and structuring frontend applications.",
+      "Developed a full-stack Integrated Rental Booking System (IRBS) using MERN stack.",
+      "Implemented JWT-based authentication and role-based access control for admin and customer users.",
+      "Designed booking workflows with real-time availability logic to prevent double-booking.",
+      "Built responsive UI with Tailwind CSS and optimized API data handling for better performance and user experience",
+      "Structured backend using RESTful API design and modular architecture."
     ],
   },
 ];
@@ -42,21 +34,27 @@ export const resumeProjects: ResumeProjectItem[] = [
   {
     title: "Integrated Rental Booking System (IRBS)",
     description:
-      "A full-stack web application featuring role-based access, booking management, and real-time availability tracking using modern web technologies.",
-    tags: ["REACT", "NODE.JS", "MONGODB", "EXPRESS"],
+      "Developed a full-stack car rental web application using React, Node.js, Express, and MongoDB. Implemented JWT-based authentication and role-based access control for admin and customer users. Designed booking workflows with availability validation, Supabase for media Storage and Redis-based locking mechanism to prevent concurrent booking conflicts",
+    tags: ["REACT", "NODE.JS", "EXPRESS", "MONGODB", "REDIS", "SUPABASE", "TAILWIND", "JWT"],
   },
   {
-    title: "Omni-Channel Shopping PWA",
+    title: "Shopping PWA",
     description:
-      "A Progressive Web App built with mentor guidance, delivering fast, installable, and offline-capable shopping experiences.",
-    tags: ["NEXT.JS", "TYPESCRIPT", "TAILWIND", "PWA"],
+      "Developed a full-stack Progressive Web App with mentor guidance using Node.js, Express, and MongoDB. Implemented JWT-based authentication, RESTful APIs, and Redis caching to improve performance. Built a responsive UI with Tailwind CSS and added offline support using PWA technologies. Integrated Supabase for media storage.",
+    tags: ["NODE.JS", "EXPRESS", "MONGODB", "REDIS", "SUPABASE", "TAILWIND", "JWT", "PWA"],
   },
+  {
+    title: "IoT Health Monitoring Simulator",
+    description:
+      "Developed a health monitoring simulator using Python to simulate real-time sensor data and integrated it with Microsoft Azure for cloud processing. Visualized health metrics using Power BI dashboards, demonstrating end-to-end data flow from IoT devices to cloud analytics.",
+    tags: ["PYTHON", "AZURE", "POWER BI", "IOT"],
+  }
 ];
 
 export const resumeSkillGroups: ResumeSkillGroup[] = [
   {
     title: "Frontend",
-    items: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
+    items: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
   },
   {
     title: "Backend",
@@ -66,6 +64,10 @@ export const resumeSkillGroups: ResumeSkillGroup[] = [
     title: "Tools & Technologies",
     items: ["Git", "GitHub", "Postman", "Vite", "Figma"],
   },
+  {
+    title: "CONCEPTS",
+    items: ["REST API Design", "Authentication", "Caching (Redis)", "MVC Architecture"]
+  }
 ];
 
 export const resumeEducationItems: ResumeEducationItem[] = [
@@ -75,14 +77,14 @@ export const resumeEducationItems: ResumeEducationItem[] = [
     meta: "Completed 2026",
   },
   {
-    title: "Diploma in Computer Science",
-    organization: "NCC Education / NVL University",
-    meta: "Completed 2023",
+    title: "Diploma in Computing",
+    organization: "NCC Education (via NVL University, Myanmar)",
+    meta: "Completed 2024",
   },
 ];
 
 export const resumeLanguages: ResumeLanguageItem[] = [
   { name: "Burmese", level: "Native" },
   { name: "English", level: "Fluent" },
-  { name: "Japanese", level: "Intermediate (N3 Level)" },
+  { name: "Japanese", level: "JLPT N4 Certified" },
 ];

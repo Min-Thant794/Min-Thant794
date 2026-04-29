@@ -10,7 +10,7 @@ const MainLayout = () => {
     return (
         <div 
         ref={topRef}
-        className="min-w-0 overflow-x-hidden bg-background transition-colors duration-700 text-on-background selection:bg-primary selection:text-on-primary">
+        className="min-w-0 overflow-x-hidden bg-background transition-colors duration-700 text-on-background selection:bg-primary selection:text-black">
             <NavBar/>
             <main className="min-w-0 overflow-x-hidden">
                 <Outlet/>

@@ -5,7 +5,7 @@ import ResumeProjectsSection from "../features/resume/components/ResumeProjectsS
 import ResumeSkillsSection from "../features/resume/components/ResumeSkillsSection";
 import ResumeEducationSection from "../features/resume/components/ResumeEducationSection";
 import ResumeLanguagesSection from "../features/resume/components/ResumeLanguagesSection";
-import ResumeFooterQuote from "../features/resume/components/ResumeFooterQuote";
+import ResumeContactSection from "../features/resume/components/ResumeContactSection";
 
 const Resume = () => {
     return (
@@ -15,24 +15,23 @@ const Resume = () => {
                 <ResumeActionHeader />
 
                 <div className="print-container relative overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-low p-5 shadow-2xl sm:p-8 md:p-12">
-                <div className="no-print absolute left-0 top-0 h-full w-2 bg-primary" />
+                    <div className="no-print absolute left-0 top-0 h-full w-2 bg-primary" />
 
-                <ResumeProfileHeader />
+                    <ResumeProfileHeader />
 
-                <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
-                    <div className="space-y-16 md:col-span-8">
-                    <ResumeExperienceSection />
-                    <ResumeProjectsSection />
+                    <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
+                        <div className="space-y-16 md:col-span-8">
+                        <ResumeExperienceSection />
+                        <ResumeProjectsSection />
+                        </div>
+
+                        <div className="space-y-16 md:col-span-4">
+                        <ResumeContactSection/>
+                        <ResumeSkillsSection />
+                        <ResumeEducationSection />
+                        <ResumeLanguagesSection />
+                        </div>
                     </div>
-
-                    <div className="space-y-16 md:col-span-4">
-                    <ResumeSkillsSection />
-                    <ResumeEducationSection />
-                    <ResumeLanguagesSection />
-                    </div>
-                </div>
-
-                <ResumeFooterQuote />
                 </div>
             </main>
             

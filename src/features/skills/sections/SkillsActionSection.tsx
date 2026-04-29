@@ -18,7 +18,7 @@ const SkillsActionSection = () => {
                 </NavLink>
 
                 <a 
-                href={`${import.meta.env.BASE_URL}homePage.pdf`}
+                href={`${import.meta.env.BASE_URL}myResume.pdf`}
                 download
                 className="w-full rounded-xl border border-outline-variant/30 bg-surface-container-high px-6 py-4 font-headline font-bold text-on-surface transition-colors hover:bg-surface-container-highest sm:w-auto sm:px-8">
                     Download CV
