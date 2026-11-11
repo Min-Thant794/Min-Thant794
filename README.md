@@ -43,26 +43,30 @@ My goal is to become a **backend developer who builds reliable APIs for enterpri
 
 ### ☕ User Management System
 
-**Current Java & Spring Boot learning project · 🚧 In progress**
+**Self-learning project built with LLM assistance · Java & Spring Boot · ✅ Completed & deployed**
 
-A backend project I'm developing as I move from Node.js to Java and Spring Boot. It is a practical step toward my goal of building enterprise backend APIs, with a focus on authentication, authorization, database design, and application security.
+A user management API I built as a self-learning project while moving from Node.js to Java and Spring Boot, a practical step toward my goal of building enterprise backend APIs. I relied on LLMs such as Claude as a learning assistant throughout, using them to work through backend concepts and implementation while learning how the pieces fit together.
 
-I'm using this project to explore how the different parts of a user management system fit together, from signing in and recovering an account to enforcing permissions and recording security-related activity.
+It covers the full account lifecycle, from sign-up and email verification to login, password recovery, and session management, plus admin tools for managing users and reviewing audit logs. It took me well beyond basic CRUD into token security, transactions, role-based access, caching, and testing.
 
-**Features and learning areas**
+**Key features**
 
-| Area | Project scope |
+| Area | What's included |
 | --- | --- |
-| **Authentication** | Username or email login, JWT access and refresh tokens, Google OAuth2 login |
-| **Account lifecycle** | Email verification and password reset |
-| **Authorization** | Role-based access control and admin user management |
-| **Data persistence** | PostgreSQL, Spring Data JPA, and Flyway database migrations |
-| **Account protection** | Argon2 password hashing, Bucket4j rate limiting, and login attempt lockout |
-| **Auditability** | Audit logs for tracking activity |
+| **Authentication & sessions** | Username or email login, Google OAuth2, JWT access tokens with refresh-token rotation and reuse detection, and active-session management |
+| **Account lifecycle** | Email verification, password reset, email-change confirmation, and Cloudinary profile photos |
+| **Authorization** | Role-based access control with admin tools to search, edit, and manage users |
+| **Account protection** | Argon2 password hashing, Bucket4j rate limiting, and failed-login lockout |
+| **Auditability** | Paginated, filterable audit logs of administrator activity |
+| **Data & caching** | PostgreSQL, Spring Data JPA, Flyway migrations, and Redis caching |
+| **Testing & docs** | Unit, integration, and end-to-end tests, with Swagger/OpenAPI documentation |
+| **Deployment** | Dockerized API on Render, React frontend on Vercel |
 
-**Tech stack:** Java, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, Flyway, JWT, OAuth2, Argon2, Bucket4j
+**Tech stack:** Java 21, Spring Boot, Spring Security, Spring Data JPA, PostgreSQL, Flyway, Redis, JWT, OAuth2, Argon2, Bucket4j, Cloudinary, Docker, JUnit, Mockito
 
-**Repository:** [User Management System Backend](https://github.com/Min-Thant794/userManagementSystem)
+**Links:** [Live app](https://user-management-system-frontend-mocha.vercel.app/) · [API docs](https://usermanagementsystem-api.onrender.com/swagger-ui/index.html) · [Backend repo](https://github.com/Min-Thant794/userManagementSystem) · [Frontend repo](https://github.com/Min-Thant794/userManagementSystemFrontend)
+
+_Hosted on a free tier, so the first load after a period of inactivity can take up to a minute._
 
 ---
 
